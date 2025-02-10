@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Слайдер | Проект 3</title>
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="content/img/logo.jpg" alt="Загрузка..." id="loader-image">
+  </div>
+
+  <style>
+    #preloader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    #loader-image {
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    .fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        let preloader = document.getElementById("preloader");
+        preloader.classList.add("fade-out"); 
+
+        setTimeout(() => {
+          preloader.style.display = "none"; 
+        }, 500); 
+      }, 500); 
+    });
+  </script>
+  <header id="content" class="intro">
+    <div class="left">
+      <div class="inner_left">
+        <h1 class="title">NEXTROOM</h1>
+        <p class="subtitle">мы создаём не просто мебель – мы воплощаем индивидуальность и стиль каждого клиента,
+          объединяя премиальное качество, безупречный дизайн и эксклюзивный подход в каждом изделии.</p>
+        <ul class="menu">
+          <li><a href="">Услуги</a></li>
+          <li class="for_border"><a href="">Наш подход</a></li>
+          <li class="for_border"><a href="">Технологии и материалы</a></li>
+          <li><a href="">Философия</a></li>
+        </ul>
+        <div class="bottom_text">
+          <p class="bottom_text_item_1">01.</p>
+          <p class="bottom_text_item_2">проект спальни</p>
+        </div>
+        <div class="bottom_about">
+          <img src="content/img/quotes.png" alt="">
+          <p class="bottom_about_text">Каждая деталь этой комнаты создана с учётом индивидуальных пожеланий клиента,
+            отражая их стиль, потребности и уникальный вкус.</p>
+        </div>
+        <div class="connect">
+          <a style="color: black;" href="tel:+79117985578">+7 911 798 55 78</a>
+          <a class="icons" href="https://t.me/+79117985578"><img src="content/img/teleg.png" alt=""></a>
+          <a href="https://api.whatsapp.com/send/?phone=79117985578&text&type=phone_number&app_absent=0"><img
+              src="content/img/whatsapp.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <ul>
+        <li style="background-image:url('content/img/1.jpg')">
+          <div class="center-y"></div>
+        </li>
+        <li style="background-image:url('content/img/2.jpg')">
+          <div class="center-y"></div>
+        </li>
+        <li style="background-image:url('content/img/3.jpg')">
+          <div class="center-y"></div>
+        </li>
+      </ul>
+
+      <ul>
+        <nav>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </nav>
+      </ul>
+    </div>
+  </header>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

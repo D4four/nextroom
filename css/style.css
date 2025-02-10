@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Asset&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Asset&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Asset&family=Great+Vibes&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: calc(5px + 0.4vw);
+}
+
+body {
+  font-family: "Arsenal SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+  font-size: 2.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.menu li {
+  cursor: pointer;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.menu li a {
+  color: #000;
+}
+
+.for_border {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.left {
+  float: left;
+  height: 100%;
+  width: 60%;
+  padding: 3rem 3rem 3rem 5rem;
+  display: table;
+}
+
+.inner_left {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.title {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -5rem;
+  font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.subtitle {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: -5rem;
+  margin: 0 auto;
+  color: #7C7C7C;
+  font-size: 2.3rem;
+  margin-bottom: 4rem;
+  width: 80%;
+  text-align: center;
+}
+
+.bottom_text {
+  position: absolute;
+  bottom: 16rem;
+  font-size: 1.6rem;
+  color: #000;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+}
+
+.bottom_text_item_1 {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.bottom_text_item_2 {
+  font-size: 2.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.bottom_about {
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+  left: 40rem;
+  width: 45rem;
+  position: absolute;
+  bottom: 12rem;
+  font-size: 2.3rem;
+  color: #000;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  line-height: 2.3rem;
+}
+
+.bottom_about_text {
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.bottom_about_text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.connect {
+  position: absolute;
+  top: 2rem;
+  font-size: 1.6rem;
+  color: #000;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.connect a {
+  font-size: 2.6rem;
+  line-height: 3rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.icons {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.slider {
+  float: right;
+  position: relative;
+  width: 40%;
+  height: 100%;
+}
+
+.slider li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: clip .7s ease-in-out, z-index 0s .7s;
+  clip: rect(0, 100vw, 100vh, 100vw);
+  display: table;
+}
+
+.center-y {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+}
+
+li.current {
+  z-index: 1;
+  clip: rect(0, 100vw, 100vh, 0);
+}
+
+li.prev {
+  clip: rect(0, 0, 100vh, 0);
+}
+
+.slider nav {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+nav a {
+  display: inline-block;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  min-width: 12px;
+  min-height: 12px;
+  background: #fff;
+  margin: 0 1rem;
+  transition: transform .3s;
+}
+
+a.current_dot {
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 700px) {
+  .left {
+    width: 100%;
+    height: 30%;
+  }
+
+  .slider {
+    width: 100%;
+    height: 70%;
+  }
+}
