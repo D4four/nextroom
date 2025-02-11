@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="content/img/icon.jpg" type="image/jpg">
   <link rel="stylesheet" href="css/style.css" />
-  <title>Слайдер | Проект 3</title>
+  <title>nextroom</title>
 </head>
 
 <body>
@@ -14,6 +15,18 @@
   </div>
 
   <style>
+    body {
+      transition: filter 0.3s ease;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: var(--scroll-top);
+    }
+
     #preloader {
       position: fixed;
       width: 100%;
@@ -51,18 +64,102 @@
       opacity: 0;
       pointer-events: none;
     }
+
+    #overlay {
+      /* display: none; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      /* Скрываем оверлей по умолчанию */
+      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    }
+
+    /* #modal {
+      font-size: 2.6rem;
+      font-family: "Arsenal SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      z-index: 100;
+      top: 120vh;
+      width: 760px;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    } */
+    #modal {
+      font-size: 2.6rem;
+      font-family: "Arsenal SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      /* Начальный размер для анимации */
+      background: white;
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      width: 760px;
+      opacity: 0;
+      /* Скрыто по умолчанию */
+      visibility: hidden;
+      /* Скрыто по умолчанию */
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
+      /* Плавный переход */
+    }
+
+    #overlay.show {
+      opacity: 1;
+      visibility: visible;
+      /* Делает оверлей видимым */
+    }
+
+    #modal.show {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      /* Плавно увеличиваем размер */
+      visibility: visible;
+      /* Делает модальное окно видимым */
+    }
+
+    .close-button {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      font-weight: bold;
+    }
   </style>
 
   <script>
     window.addEventListener("load", function () {
       setTimeout(() => {
         let preloader = document.getElementById("preloader");
-        preloader.classList.add("fade-out"); 
+        preloader.classList.add("fade-out");
 
         setTimeout(() => {
-          preloader.style.display = "none"; 
-        }, 500); 
-      }, 500); 
+          preloader.style.display = "none";
+        }, 500);
+      }, 500);
     });
   </script>
   <header id="content" class="intro">
@@ -72,10 +169,10 @@
         <p class="subtitle">мы создаём не просто мебель – мы воплощаем индивидуальность и стиль каждого клиента,
           объединяя премиальное качество, безупречный дизайн и эксклюзивный подход в каждом изделии.</p>
         <ul class="menu">
-          <li><a href="">Услуги</a></li>
-          <li class="for_border"><a href="">Наш подход</a></li>
-          <li class="for_border"><a href="">Технологии и материалы</a></li>
-          <li><a href="">Философия</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li class="for_border"><a href="#approach">Наш подход</a></li>
+          <li class="for_border"><a href="#tech">Технологии и материалы</a></li>
+          <li><a href="#end">Философия</a></li>
         </ul>
         <div class="bottom_text">
           <p class="bottom_text_item_1">01.</p>
@@ -117,6 +214,166 @@
       </ul>
     </div>
   </header>
+  <section id="services" class="services section-page">
+    <div id="overlay"></div>
+    <div id="modal">
+      <button class="close-button" onclick="closeModal()">&times;</button>
+      <p>Команда <b>NEXTROOM</b> рада приветствовать вас!</p><br>
+      <p>Мы предлагаем выезд дизайнера к вам домой за наш счет. Специалист выполнит замеры, представит возможные решения
+        для вашего интерьера и предложит идеи по эффективному использованию пространства.</p><br>
+      <p>Если вы хотите обсудить детали и согласовать удобное время встречи, просто оставьте заявку.</p>
+    </div>
+    <div class="background_services_right"></div>
+    <div class="background_services_left"></div>
+    <div class="container">
+      <div class="services">
+        <div class="spaces">
+          <img src="content/img/spaces.png" alt="">
+          <p class="services_title services_title_spaces">пространства</p>
+          <p class="services_subtitle services_subtitle_spaces">Наша компания не только производит мебель, но и создает
+            полноценные интерьерные
+            решения для любых пространств. Мы разрабатываем дизайн, изготавливаем мебель на заказ и обустраиваем
+            пространство под ключ, обеспечивая стиль, удобство и индивидуальный подход.</p>
+        </div>
+        <div class="furniture">
+          <div class="individ">
+            <img style="max-width: 100%; height: auto;" src="content/img/individ.png" alt="">
+            <p class="services_title services_title_individ">индивидуальная мебель</p>
+            <p class="services_subtitle services_subtitle_individ">идеальное сочетание стиля, качества и
+              индивидуальности.</p>
+          </div>
+          <div class="soft">
+            <img style="max-width: 100%; height: auto;" src="content/img/soft.png" alt="">
+            <p class="services_title services_title_soft">мягкая мебель</p>
+            <p class="services_subtitle services_subtitle_soft">сочетает в себе непревзойденный комфорт, изысканный
+              дизайн и идеальное
+              соответствие вашему интерьеру.</p>
+          </div>
+        </div>
+        <div class="interior">
+          <img style="max-width: 100%; height: auto;" src="content/img/interior.png" alt="">
+          <p class="services_title services_title_interior">полноценные интерьеры</p>
+          <p class="services_subtitle services_subtitle_interior">Наша компания не только производит мебель, но и
+            создает полноценные интерьерные
+            решения для любых пространств. Мы разрабатываем дизайн.</p>
+        </div>
+      </div>
+      <a class="request">Оставить заявку</a>
+    </div>
+  </section>
+  <section id="approach" class="approach section-page">
+    <div class="background_services_left sec"></div>
+    <div class="background_services_right sec_r"></div>
+    <div class="container">
+      <div class="content_approach">
+        <div class="text_approach">
+          <p class="whatis_approach">Создание уникальных интерьеров – это искусство, и мы подходим к каждому проекту
+            с особой заботой и вниманием, достойными премиального уровня. Наш подход основан на трех ключевых принципах:
+            индивидуальность, безупречное качество и стремление превзойти ваши ожидания.</p>
+          <ul class="approach_list">
+            <li>
+              <p class="title_approach">15 лет</p>
+              <p class="subtitle_approach">гарантия</p>
+            </li>
+            <li>
+              <p class="title_approach">Дизайн - проект</p>
+              <p class="subtitle_approach">за наш счет</p>
+            </li>
+            <li>
+              <p class="title_approach">Клининг</p>
+              <p class="subtitle_approach">после монтажа</p>
+            </li>
+          </ul>
+          <a class="request_sec">Оставить заявку</a>
+        </div>
+        <div class="img_approach">
+          <img src="content/img/6.png" alt="">
+          <img src="content/img/7.png" alt="">
+          <img src="content/img/8.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tech" class="tech section-page">
+    <div class="background_services_left sec_1"></div>
+    <div class="background_services_right sec_r_1"></div>
+    <div class="container">
+      <div class="content_tech">
+        <div class="text_tech">
+          <p class="whatis_tech">Мы используем только самые современные технологии и премиальные материалы, чтобы
+            создавать уникальные и долговечные пространства, которые отвечают вашим высоким стандартам. Наша команда
+            уделяет внимание каждой детали, чтобы воплотить в жизнь интерьеры, сочетающие эстетичность, функциональность
+            и надежность.</p>
+          <ul class="tech_list">
+            <li>
+              <p class="title_tech">&bull; Прецизионное производство</p>
+            </li>
+            <li>
+              <p class="title_tech">&bull; Инновационные решения</p>
+            </li>
+            <li>
+              <p class="title_tech">&bull; Инновационные решения</p>
+            </li>
+          </ul>
+          <a class="request_sec_1">Оставить заявку</a>
+        </div>
+        <div class="img_approach">
+          <img src="content/img/9.png" alt="">
+          <img src="content/img/10.png" alt="">
+          <img src="content/img/11.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="end" class="end section-page">
+    <div class="container">
+      <div class="for_item">
+        <img class="sign" src="content/img/sign_pre.png" alt="">
+        <p class="auth_text">За время работы компании, мне посчастливилось участвовать в реализации знаковых проектов, в
+          команде одних из лучших дизайнеров РФ. Этот уникальный опыт я использую в своей авторской работе на протяжении
+          многих лет.</p>
+        <img class="photo" src="content/img/photo.png" alt="">
+      </div>
+      <ul class="end_list">
+        <li>ООО"NEXTROOM"</li>
+        <li>ИНН: 123456789</li>
+        <li>ОГРН: 545456465456</li>
+      </ul>
+    </div>
+  </section>
+  <script>
+    let modalShown = false;
+    let scrollPosition = 0;
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("show");
+      document.getElementById("overlay").classList.remove("show");
+      document.documentElement.style.overflow = "";
+      window.scrollTo(0, scrollPosition);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("scroll", function checkScroll() {
+        if (modalShown) return;
+
+        let techSection = document.getElementById("services");
+        let modal = document.getElementById("modal");
+        let overlay = document.getElementById("overlay");
+        let rect = techSection.getBoundingClientRect();
+
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          scrollPosition = window.scrollY;
+          modal.classList.add("show");
+          overlay.classList.add("show");
+          document.documentElement.style.overflow = "hidden";
+
+          modalShown = true;
+          window.removeEventListener("scroll", checkScroll);
+        }
+      });
+    });
+
+  </script>
   <script src="js/main.js"></script>
 </body>
 

@@ -8,8 +8,11 @@
   margin: 0;
 }
 
+
 html {
   font-size: calc(5px + 0.4vw);
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,12 +31,27 @@ ul li {
   list-style: none;
 }
 
+.container {
+  max-width: 1380px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.section-page {
+  height: 100vh;
+  padding: 0 auto;
+  text-align: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
 .menu {
   font-size: 2.6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
+
 .menu li {
   cursor: pointer;
   padding-left: 1rem;
@@ -165,8 +183,10 @@ ul li {
 }
 
 .slider {
-  float: right;
-  position: relative;
+  /* float: right; 
+  position: relative; */
+  position: absolute;
+  right: 0;
   width: 40%;
   height: 100%;
 }
@@ -224,6 +244,246 @@ nav a {
 
 a.current_dot {
   transform: scale(1.4);
+}
+
+.background_services_right {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  bottom: -20rem;
+  height: 10rem;
+  width: 30rem;
+  background-color: #4D220E;
+  opacity: 50%;
+}
+
+.background_services_left {
+  position: absolute;
+  left: 0;
+  z-index: -2;
+  top: 85rem;
+  height: 30rem;
+  width: 30rem;
+  background-color: #4D220E;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.furniture {
+  padding-right: 35px;
+}
+
+.services_title {
+  font-family: "Arsenal SC", serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  text-align: left;
+}
+
+.services_subtitle {
+  font-family: "Arsenal SC", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+.spaces {
+  width: 100%;
+}
+
+.furniture {
+  margin-left: 35px;
+}
+
+.request {
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  position: relative;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 1rem;
+  top: -10rem;
+  right: -30rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.request:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.content_approach {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.whatis_approach {
+  font-family: "Arsenal SC", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 5rem;
+  color: #fff;
+}
+
+.approach_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+  padding-right: 50px;
+}
+
+.approach_list li {
+  border: 1px solid #000;
+  padding: 25px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.title_approach {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.subtitle_approach {
+  font-size: 1.8rem;
+}
+
+.request_sec {
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin-top: 20rem;
+  margin-right: 20rem;
+}
+
+.request_sec:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.sec {
+  top: 153rem;
+  width: 63rem;
+  height: 20rem;
+  opacity: 50%;
+  z-index: -1;
+}
+
+.sec_r {
+  bottom: -110rem;
+  width: 63rem;
+  height: 15rem;
+  opacity: 100%;
+}
+
+.content_tech {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.whatis_tech {
+  font-family: "Arsenal SC", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-align: right;
+  padding-right: 100px;
+  padding-top: 5rem;
+}
+
+.tech_list {
+  font-size: 2.3rem;
+  margin-top: 10rem;
+  margin-bottom: 12rem;
+  padding-right: 50px;
+  text-align: right;
+  padding-right: 15rem;
+  color: #fff;
+  text-align: left;
+}
+
+.title_tech {
+  padding-bottom: 2.5rem;
+}
+
+.sec_1 {
+  top: 255rem;
+  width: 63rem;
+  height: 20rem;
+}
+
+.sec_r_1 {
+  bottom: -180rem;
+  width: 63rem;
+  height: 15rem;
+}
+
+.request_sec_1 {
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  margin-top: 20rem;
+  margin-right: 20rem;
+}
+
+.request_sec_1:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.end {
+  height: auto;
+}
+
+.for_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+}
+
+.sign {
+  width: 30%;
+  height: 30%;
+}
+
+.photo {
+  width: 30%;
+  height: auto;
+}
+
+.auth_text {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-family: "Great Vibes", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.6rem;
+}
+
+.end_list {
+  text-align: left;
 }
 
 @media screen and (max-width: 700px) {

@@ -7,7 +7,7 @@
         this.totalSlides = this.Slides.length;
         this.current = 0;
         this.autoPlay = true;
-        this.timeTrans = 2000;
+        this.timeTrans = 3000;
         this.IndexElements = [];
         this.bottomText = document.querySelector('.bottom_text');
         this.bottomAboutText = document.querySelector('.bottom_about_text');
