@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="content/img/icon.jpg" type="image/jpg">
   <title>nextroom</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
   <link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -16,142 +17,6 @@
   <div id="preloader">
     <img src="content/img/logo.jpg" alt="Загрузка..." id="loader-image">
   </div>
-
-  <style>
-    body {
-      transition: filter 0.3s ease;
-    }
-
-    body.modal-open {
-      overflow: hidden;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: var(--scroll-top);
-    }
-
-    #preloader {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      transition: opacity 0.5s ease;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-
-      50% {
-        transform: scale(1.1);
-        opacity: 0.7;
-      }
-
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    #loader-image {
-      animation: pulse 2s infinite ease-in-out;
-    }
-
-    .fade-out {
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    #overlay {
-      /* display: none; */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      backdrop-filter: blur(5px);
-      z-index: 99;
-      opacity: 0;
-      visibility: hidden;
-      /* Скрываем оверлей по умолчанию */
-      transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-    }
-
-    /* #modal {
-      font-size: 2.6rem;
-      font-family: "Arsenal SC", serif;
-      font-weight: 400;
-      font-style: normal;
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: white;
-      padding: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      position: absolute;
-      z-index: 100;
-      top: 120vh;
-      width: 760px;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    } */
-    #modal {
-      font-size: 2.6rem;
-      font-family: "Arsenal SC", serif;
-      font-weight: 400;
-      font-style: normal;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0.8);
-      /* Начальный размер для анимации */
-      background: white;
-      padding: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      z-index: 100;
-      width: 760px;
-      opacity: 0;
-      /* Скрыто по умолчанию */
-      visibility: hidden;
-      /* Скрыто по умолчанию */
-      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, visibility 0.5s ease-in-out;
-      /* Плавный переход */
-    }
-
-    #overlay.show {
-      opacity: 1;
-      visibility: visible;
-      /* Делает оверлей видимым */
-    }
-
-    #modal.show {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-      /* Плавно увеличиваем размер */
-      visibility: visible;
-      /* Делает модальное окно видимым */
-    }
-
-    .close-button {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-  </style>
 
   <script>
     window.addEventListener("load", function () {
@@ -174,8 +39,10 @@
         <ul class="menu">
           <li><a href="#services">Услуги</a></li>
           <li class="for_border"><a href="#approach">Наш подход</a></li>
+          <li class="for_border"><a href="#reviews">Отзывы</a></li>
           <li class="for_border"><a href="#tech">Технологии и материалы</a></li>
-          <li><a href="#end">Философия</a></li>
+          <li class="for_border"><a href="#faq">FAQ</a></li>
+          <li class="for_border"><a href="#end">Философия</a></li>
         </ul>
         <div class="bottom_text">
           <p class="bottom_text_item_1">01.</p>
@@ -298,68 +165,68 @@
     </div>
   </section>
 
-  <section class="reviews section-page">
-		<div class="container">
-			<div class="reviews__slider">
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 1
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 1
-					</p>
-				</div>
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 2
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 2
-					</p>
-				</div>
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 3
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 3
-					</p>
-				</div>
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 4
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 4
-					</p>
-				</div>
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 5
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 5
-					</p>
-				</div>
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 6
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 6
-					</p>
-				</div>
-				<div class="reviews__item">
-					<p class="reviews__item-name">
-						Автор 7
-					</p>
-					<p class="reviews__item-text">
-						Отзыв 7
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section id="reviews" class="reviews section-page">
+    <div class="container">
+      <div class="reviews__slider">
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 1
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 1
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 2
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 2
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 3
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 3
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 4
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 4
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 5
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 5
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 6
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 6
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 7
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 7
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="tech" class="tech section-page">
     <div class="background_services_left sec_1"></div>
@@ -395,41 +262,49 @@
 
   <section id="faq" class="faq section-page">
     <div class="container" style="position: relative;top: 35%;">
-        <div class="questions">
-            <div class="questions__item">
-                <div class="accordion">
-                    <div class="accordion__item" data-collapse="#questions_1">
-                        <div class="accordion__header">
-                            <div class="accordion__title">Вопрос 1</div>
-                        </div>
-                        <div class="accordion__content" id="questions_1">
-                            <p>Ответ 1</p>
-                        </div>
-                    </div>
-                    
-                    <div class="accordion__item" data-collapse="#questions_2">
-                        <div class="accordion__header">
-                            <div class="accordion__title">Вопрос 2</div>
-                        </div>
-                        <div class="accordion__content" id="questions_2">
-                            <p>Ответ 2</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion__item" data-collapse="#questions_3">
-                        <div class="accordion__header">
-                            <div class="accordion__title">Вопрос 3</div>
-                        </div>
-                        <div class="accordion__content" id="questions_3">
-                            <p>Ответ 3</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="questions">
+        <div class="questions__item">
+          <div class="accordion">
+            <div class="accordion__item" data-collapse="#questions_1">
+              <div class="accordion__header">
+                <div class="accordion__title">Как проходит процесс работы?</div>
+              </div>
+              <div class="accordion__content" id="questions_1">
+                <p>Ответ 1</p>
+              </div>
             </div>
+
+            <div class="accordion__item" data-collapse="#questions_2">
+              <div class="accordion__header">
+                <div class="accordion__title">Какие материалы используются?</div>
+              </div>
+              <div class="accordion__content" id="questions_2">
+                <p>Ответ 2</p>
+              </div>
+            </div>
+
+            <div class="accordion__item" data-collapse="#questions_3">
+              <div class="accordion__header">
+                <div class="accordion__title">Сколько стоит замер?</div>
+              </div>
+              <div class="accordion__content" id="questions_3">
+                <p>Ответ 3</p>
+              </div>
+            </div>
+            <div class="accordion__item" data-collapse="#questions_3">
+              <div class="accordion__header">
+                <div class="accordion__title">Как долго занимает изготовление?</div>
+              </div>
+              <div class="accordion__content" id="questions_3">
+                <p>Ответ 3</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
     </div>
-</section>
+  </section>
 
   <section id="end" class="end section-page">
     <div class="container">
@@ -454,6 +329,28 @@
       <h2>Оставьте заявку</h2>
       <form id="contactForm">
         <input type="text" name="name" placeholder="Как к вам обращаться?" required>
+        <div class="custom-select" id="furnitureSelect">
+          <div class="select-trigger">Выберите тип мебели</div>
+          <div style="z-index: 100;" class="select-dropdown">
+            <label><input type="checkbox" value="Шкаф"> Шкаф</label>
+            <label><input type="checkbox" value="Кухня"> Кухня</label>
+            <label><input type="checkbox" value="Стол"> Стол</label>
+            <label><input type="checkbox" value="Тумба"> Тумба</label>
+          </div>
+        </div>
+        <input type="text" name="dimensions" id="dimensions" placeholder="Размеры (120x200x60)" required>
+        <div class="custom-select" id="materialSelect">
+          <div class="select-trigger">Выберите материалы</div>
+          <div class="select-dropdown">
+            <label><input type="checkbox" value="Дерево"> Дерево</label>
+            <label><input type="checkbox" value="ЛДСП"> ЛДСП</label>
+            <label><input type="checkbox" value="МДФ"> МДФ</label>
+          </div>
+        </div>
+        <div class="colorBox">
+          <label>Цвет:</label>
+          <div class="color-picker"></div>
+        </div>
         <input type="tel" name="phone" placeholder="Телефон для связи" required>
         <input type="email" name="email" placeholder="Почта" required>
         <textarea name="message" placeholder="Возможные пожелания"></textarea>
@@ -462,7 +359,7 @@
       </form>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
   <script>
     let modalShown = false;
     let scrollPosition = 0;
@@ -493,6 +390,41 @@
           window.removeEventListener("scroll", checkScroll);
         }
       });
+
+      let materialSelect = document.getElementById('materialSelect');
+      let furnitureSelect = document.getElementById('furnitureSelect');
+
+      let materialTrigger = materialSelect.querySelector('.select-trigger');
+      let furnitureTrigger = furnitureSelect.querySelector('.select-trigger');
+
+      let materialCheckboxes = materialSelect.querySelectorAll('.select-dropdown input');
+      let furnitureCheckboxes = furnitureSelect.querySelectorAll('.select-dropdown input');
+
+      function updateSelectedText(trigger, checkboxes) {
+        let selected = Array.from(checkboxes)
+          .filter(checkbox => checkbox.checked)
+          .map(checkbox => checkbox.value);
+
+        trigger.textContent = selected.length ? selected.join(', ') : 'Выберите';
+      }
+
+      materialCheckboxes.forEach(checkbox => checkbox.addEventListener('change', () => updateSelectedText(materialTrigger, materialCheckboxes)));
+      furnitureCheckboxes.forEach(checkbox => checkbox.addEventListener('change', () => updateSelectedText(furnitureTrigger, furnitureCheckboxes)));
+
+      function setupDropdown(selectElement, trigger) {
+        trigger.addEventListener('click', function () {
+          selectElement.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!selectElement.contains(e.target)) {
+            selectElement.classList.remove('open');
+          }
+        });
+      }
+
+      setupDropdown(materialSelect, materialTrigger);
+      setupDropdown(furnitureSelect, furnitureTrigger);
     });
 
     document.querySelectorAll('.openPopup').forEach(button => {
@@ -510,11 +442,63 @@
       document.getElementById('popupOverlay').style.display = 'none';
     });
 
+
+    const pickr = Pickr.create({
+      el: '.color-picker',
+      theme: 'nano', // or 'monolith', or 'nano'
+
+      swatches: [
+        'rgba(244, 67, 54, 1)',
+        'rgba(233, 30, 99, 0.95)',
+        'rgba(156, 39, 176, 0.9)',
+        'rgba(103, 58, 183, 0.85)',
+        'rgba(63, 81, 181, 0.8)',
+        'rgba(33, 150, 243, 0.75)',
+        'rgba(3, 169, 244, 0.7)',
+        'rgba(0, 188, 212, 0.7)',
+        'rgba(0, 150, 136, 0.75)',
+        'rgba(76, 175, 80, 0.8)',
+        'rgba(139, 195, 74, 0.85)',
+        'rgba(205, 220, 57, 0.9)',
+        'rgba(255, 235, 59, 0.95)',
+        'rgba(255, 193, 7, 1)'
+      ],
+
+      components: {
+
+        // Main components
+        preview: true,
+        opacity: true,
+        hue: true,
+
+        // Input / output Options
+        interaction: {
+          hex: false,
+          rgba: false,
+          hsla: false,
+          hsva: false,
+          cmyk: false,
+          input: true,
+          clear: false,
+          save: true
+        }
+      },
+
+      i18n: {
+
+        'btn:save': 'Ok',
+
+      }
+    });
+
+    pickr.on('save', (color, instance) => {
+      instance.hide();
+    });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/any.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/any.js"></script>
   <script src="js/main.js"></script>
 </body>
 
