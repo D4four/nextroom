@@ -326,35 +326,60 @@
   <div class="popup-overlay" id="popupOverlay">
     <div class="popup">
       <span class="close" id="closePopup">&times;</span>
-      <h2>Оставьте заявку</h2>
+      <h2 style="font-family: 'Arsenal SC', serif; font-size: 2rem; margin-bottom: 1rem;">Оставьте заявку</h2>
       <form id="contactForm">
-        <input type="text" name="name" placeholder="Как к вам обращаться?" required>
+        <input style="font-family: 'Arsenal SC', serif;" type="text" name="name" placeholder="Как к вам обращаться?"
+          required>
+
         <div class="custom-select" id="furnitureSelect">
-          <div class="select-trigger">Выберите тип мебели</div>
-          <div style="z-index: 100;" class="select-dropdown">
-            <label><input type="checkbox" value="Шкаф"> Шкаф</label>
-            <label><input type="checkbox" value="Кухня"> Кухня</label>
-            <label><input type="checkbox" value="Стол"> Стол</label>
-            <label><input type="checkbox" value="Тумба"> Тумба</label>
-          </div>
-        </div>
-        <input type="text" name="dimensions" id="dimensions" placeholder="Размеры (120x200x60)" required>
-        <div class="custom-select" id="materialSelect">
-          <div class="select-trigger">Выберите материалы</div>
+          <div style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;" class="select-trigger">
+            Выберите тип мебели</div>
           <div class="select-dropdown">
-            <label><input type="checkbox" value="Дерево"> Дерево</label>
-            <label><input type="checkbox" value="ЛДСП"> ЛДСП</label>
-            <label><input type="checkbox" value="МДФ"> МДФ</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Шкаф">
+              Шкаф</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Кухня">
+              Кухня</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Стол">
+              Стол</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Тумба">
+              Тумба</label>
           </div>
         </div>
+
+        <input style="font-family: 'Arsenal SC', serif;" id="size" type="text" name="dimensions"
+          placeholder="Размеры (120x200x60)" required>
+
+        <div class="custom-select" id="materialSelect">
+          <div style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;" class="select-trigger">
+            Выберите материалы</div>
+          <div class="select-dropdown">
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Дерево">
+              Дерево</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="ЛДСП">
+              ЛДСП</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="МДФ">
+              МДФ</label>
+          </div>
+        </div>
+
         <div class="colorBox">
-          <label>Цвет:</label>
+          <label style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;">Цвет:</label>
           <div class="color-picker"></div>
         </div>
-        <input type="tel" name="phone" placeholder="Телефон для связи" required>
-        <input type="email" name="email" placeholder="Почта" required>
-        <textarea name="message" placeholder="Возможные пожелания"></textarea>
-        <input type="file" name="inspiration" accept="image/*">
+
+        <input style="font-family: 'Arsenal SC', serif;" type="tel" name="phone" placeholder="Телефон для связи"
+          required>
+        <input style="font-family: 'Arsenal SC', serif;" type="email" name="email" placeholder="Почта" required>
+        <textarea style="font-family: 'Arsenal SC', serif;" name="message" placeholder="Возможные пожелания"></textarea>
+
+        <label class="file-upload">
+          <input style="font-family: 'Arsenal SC', serif;" type="file" name="inspiration" accept="image/*"
+            placeholder="Прикрепите изображение">
+          <span style="font-family: 'Arsenal SC', serif; font-size: 1rem; opacity: 0.7;letter-spacing: 1px;">Прикрепите
+            изображение</span>
+          <span class="file-name" style="font-family: 'Arsenal SC', serif; opacity: 0.7;">+</span>
+        </label>
+
         <button type="submit">Отправить</button>
       </form>
     </div>
@@ -400,6 +425,8 @@
       let materialCheckboxes = materialSelect.querySelectorAll('.select-dropdown input');
       let furnitureCheckboxes = furnitureSelect.querySelectorAll('.select-dropdown input');
 
+
+
       function updateSelectedText(trigger, checkboxes) {
         let selected = Array.from(checkboxes)
           .filter(checkbox => checkbox.checked)
@@ -440,6 +467,10 @@
       event.preventDefault();
       alert('Форма отправлена!');
       document.getElementById('popupOverlay').style.display = 'none';
+    });
+    document.querySelector('.file-upload input').addEventListener('change', function () {
+      let fileName = this.files[0] ? this.files[0].name : "+";
+      document.querySelector('.file-name').textContent = fileName;
     });
 
 
@@ -494,6 +525,16 @@
     pickr.on('save', (color, instance) => {
       instance.hide();
     });
+
+    pickr.on('init', instance => {
+      document.querySelector('.pcr-app').style.width = '300px';
+    });
+
+    // document.querySelectorAll('.custom-select').forEach(select => {
+    //   select.addEventListener('click', function () {
+    //     this.classList.toggle('open');
+    //   });
+    // });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>

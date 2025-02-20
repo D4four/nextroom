@@ -77,20 +77,6 @@ body.modal-open {
   pointer-events: none;
 }
 
-input[type="color"] {
-  width: 60px;
-  height: 60px;
-  border: 3px solid #ccc;
-  border-radius: 50%;
-  padding: 5px;
-  cursor: pointer;
-  transition: border-color 0.3s ease;
-}
-
-input[type="color"]:hover {
-  border-color: #666;
-}
-
 #overlay {
   position: fixed;
   top: 0;
@@ -135,6 +121,27 @@ input[type="color"]:hover {
   visibility: visible;
 }
 
+.colorBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.colorBox label {
+  padding-right: 1rem;
+}
+
+.pickr {
+  width: 100%;
+}
+
+.pickr .pcr-button {
+  height: 1rem;
+  width: 100%;
+}
+
 .close-button {
   position: absolute;
   top: 5px;
@@ -147,12 +154,15 @@ input[type="color"]:hover {
 }
 
 .popup-overlay {
+  font-family: "Arsenal SC", serif;
+  font-weight: 400;
+  font-style: normal;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   display: none;
   justify-content: center;
   align-items: center;
@@ -162,15 +172,27 @@ input[type="color"]:hover {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
+  width: 450px;
   position: relative;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .popup input,
 .popup textarea {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 5px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  background: transparent;
+  padding-top: 1rem;
+  padding-left: 0;
+}
+
+.popup textarea {
+  resize: none;
+  height: 60px;
 }
 
 .popup .close {
@@ -178,31 +200,58 @@ input[type="color"]:hover {
   top: 10px;
   right: 10px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .popup button {
   width: 100%;
-  background: blue;
+  background: black;
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  /* border-radius: 5px; */
+  margin-top: 1rem;
+}
+
+#size {
+  padding-top: 2rem;
 }
 
 .custom-select {
   position: relative;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  background: transparent;
   cursor: pointer;
-  padding: 10px;
 }
 
 .select-trigger {
   display: block;
-  padding: 5px;
-  background: #fff;
+  padding: 5px 0;
+}
+
+.select-trigger::after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  right: 10px;
+  margin-top: -3px;
+  border-bottom: 1px solid #000000;
+  border-right: 1px solid #000000;
+  transform: rotate(45deg) translateY(-50%);
+  transition: all .3s ease-in-out;
+  transform-origin: 50% 0;
+}
+
+.custom-select.open .select-trigger:after {
+  margin-top: 3px;
+  transform: rotate(-135deg) translateY(-50%);
 }
 
 .select-dropdown {
@@ -216,16 +265,47 @@ input[type="color"]:hover {
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   padding: 10px;
+  z-index: 100;
 }
 
 .select-dropdown label {
   display: block;
   cursor: pointer;
+  padding: 1rem 0;
+  border-bottom: 1px solid #00000033;
 }
 
+.select-dropdown label:last-child {
+  border-bottom:0px
+}
 .custom-select.open .select-dropdown {
   display: block;
 }
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 40px; */
+  height: 50px;
+  /* border-radius: 50%; */
+  border: 2px dashed #000;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+
+.file-upload input {
+  display: none;
+}
+
+.file-upload span {
+  font-size: 24px;
+  color: black;
+}
+
+
+
 .container {
   max-width: 1380px;
   padding: 0 10px;
@@ -899,20 +979,6 @@ a.current_dot {
   font-size: 14px;
   /* color: #333; */
   text-transform: uppercase;
-}
-
-.colorBox {
-  display: flex;
-  flex-direction: row;
-}
-
-.pickr {
-  width: 100%;
-}
-
-.pickr .pcr-button {
-  height: 1rem;
-  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
