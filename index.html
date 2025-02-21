@@ -42,7 +42,7 @@
           <li class="for_border"><a href="#reviews">Отзывы</a></li>
           <li class="for_border"><a href="#tech">Технологии и материалы</a></li>
           <li class="for_border"><a href="#faq">FAQ</a></li>
-          <li class="for_border"><a href="#end">Философия</a></li>
+          <li class="for_border"><a href="#end">Контакты</a></li>
         </ul>
         <div class="bottom_text">
           <p class="bottom_text_item_1">01.</p>
@@ -88,10 +88,12 @@
     <div id="overlay"></div>
     <div id="modal">
       <button class="close-button" onclick="closeModal()">&times;</button>
+      <img style="width: 100%;margin-top: -212px;margin-bottom: -190px;" src="content/img/ven.png" alt="">
       <p>Команда <b>NEXTROOM</b> рада приветствовать вас!</p><br>
       <p>Мы предлагаем выезд дизайнера к вам домой за наш счет. Специалист выполнит замеры, представит возможные решения
         для вашего интерьера и предложит идеи по эффективному использованию пространства.</p><br>
       <p>Если вы хотите обсудить детали и согласовать удобное время встречи, просто оставьте заявку.</p>
+      <img style="width: 100%;margin-top: -195px;margin-bottom: -210px;" src="content/img/ven.png" alt="">
     </div>
     <div class="background_services_right"></div>
     <div class="background_services_left"></div>
@@ -99,7 +101,9 @@
       <div class="services">
         <div class="spaces">
           <img src="content/img/spaces.png" alt="">
-          <p class="services_title services_title_spaces">пространства</p>
+          <p class="services_title services_title_spaces"><a
+              style="text-decoration: none; list-style: none; color: black;" href="spaces/spaces_hallways.html"
+              >пространства</a></p>
           <p class="services_subtitle services_subtitle_spaces">Наша компания не только производит мебель, но и создает
             полноценные интерьерные
             решения для любых пространств. Мы разрабатываем дизайн, изготавливаем мебель на заказ и обустраиваем
@@ -108,7 +112,7 @@
         <div class="furniture">
           <div class="individ">
             <img style="max-width: 100%; height: auto;" src="content/img/individ.png" alt="">
-            <p class="services_title services_title_individ">индивидуальная мебель</p>
+            <p class="services_title services_title_individ"><a>индивидуальная мебель</a></p>
             <p class="services_subtitle services_subtitle_individ">идеальное сочетание стиля, качества и
               индивидуальности.</p>
           </div>
@@ -309,7 +313,26 @@
   <section id="end" class="end section-page">
     <div class="container">
       <div class="for_item">
-        <img class="sign" src="content/img/sign_pre.png" alt="">
+        <div class="popup-overlay_end">
+          <h3 style="text-align: left;font-size: 2rem;padding-left: 0.5rem;margin-bottom: 1rem;">Остались вопросы?</h3>
+          <div class="popup">
+            
+            <form id="contactForm">
+              <input style="font-family: 'Arsenal SC', serif;" type="text" name="name"
+                placeholder="Как к вам обращаться?" required>
+
+              <input style="font-family: 'Arsenal SC', serif;" type="tel" name="phone" placeholder="Телефон для связи"
+                required>
+              <input style="font-family: 'Arsenal SC', serif;" type="email" name="email" placeholder="Почта" required>
+              <textarea style="font-family: 'Arsenal SC', serif;" name="message" placeholder="Комментарий"></textarea>
+
+
+
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <!-- <img class="sign" src="content/img/sign_pre.png" alt=""> -->
         <p class="auth_text">За время работы компании, мне посчастливилось участвовать в реализации знаковых проектов, в
           команде одних из лучших дизайнеров РФ. Этот уникальный опыт я использую в своей авторской работе на протяжении
           многих лет.</p>
