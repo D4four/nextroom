@@ -11,11 +11,18 @@
         this.IndexElements = [];
         this.bottomText = document.querySelector('.bottom_text');
         this.bottomAboutText = document.querySelector('.bottom_about_text');
+        // this.textData = [
+        //     { num: "01.", text: "проект спальни", about: "Каждая деталь этой спальни создана с учётом индивидуальных пожеланий клиента." },
+        //     { num: "02.", text: "проект гостиной", about: "Гостиная сочетает комфорт и стиль, отражая вкус её владельцев." },
+        //     { num: "03.", text: "проект кухни", about: "Функциональная и эстетичная кухня, созданная для удобства и вдохновения." }
+        // ];
+
         this.textData = [
-            { num: "01.", text: "проект спальни", about: "Каждая деталь этой спальни создана с учётом индивидуальных пожеланий клиента." },
-            { num: "02.", text: "проект гостиной", about: "Гостиная сочетает комфорт и стиль, отражая вкус её владельцев." },
-            { num: "03.", text: "проект кухни", about: "Функциональная и эстетичная кухня, созданная для удобства и вдохновения." }
+            { num: "", text: "", about: "" },
+            { num: "", text: "", about: "" },
+            { num: "", text: "", about: "" }
         ];
+
 
         for (var i = 0; i < this.totalSlides; i++) {
             this.IndexElements.push(i);

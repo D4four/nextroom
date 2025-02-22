@@ -530,7 +530,7 @@ a.current_dot {
   height: 10rem;
   width: 30rem;
   background-color: #4D220E;
-  opacity: 50%;
+  /* opacity: 50%; */
 }
 
 .background_services_left {
@@ -541,6 +541,7 @@ a.current_dot {
   height: 30rem;
   width: 30rem;
   background-color: #4D220E;
+  opacity: 0.5;
 }
 
 .services {
@@ -569,9 +570,9 @@ a.current_dot {
   padding-bottom: 35px;
 }
 
-.spaces {
+/* .spaces {
   width: 100%;
-}
+} */
 
 .furniture {
   margin-left: 35px;
@@ -1022,6 +1023,37 @@ a.current_dot {
   /* max-width: 1380px; */
   margin: 2rem 15rem;
   align-items: center;
+}
+
+.services_img {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover_overlay_text {
+  position: relative;
+  top: 10rem;
+  left: -23rem;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  letter-spacing: 0.5rem;
+
+}
+.services_img:hover {
+  filter: brightness(50%);
+  /* scale: 1.02; */
+}
+.services_img:hover + .hover_overlay_text {
+  opacity: 1;
+  /* z-index: -1; */
 }
 
 @media screen and (max-width: 700px) {
