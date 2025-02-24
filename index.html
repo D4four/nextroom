@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -84,15 +86,15 @@
       </ul>
     </div>
   </header>
-  <section id="services" class="services section-page">
+  <!-- <section id="services" class="services section-page">
     <div id="overlay"></div>
     <div id="modal">
       <button class="close-button" onclick="closeModal()">&times;</button>
       <img style="width: 100%;margin-top: -212px;margin-bottom: -190px;" src="content/img/ven.png" alt="">
       <span style="display: block; text-align: left; padding-left: 1rem;">Команда <b>NEXTROOM</b> рада приветствовать вас!</span><br>
-      <span style="display: block; text-align: left; padding-left: 1rem;">Мы предлагаем <span style="background-color: #4D220E; opacity: 0.5; color: white; padding-right: 5px; padding-left: 5px; line-height: 3rem;">выезд дизайнера</span> к вам домой за <span style="background-color: #4D220E; opacity: 0.5; color: white; padding-right: 5px; padding-left: 5px; line-height: 3rem;">наш счет</span>. Специалист выполнит замеры, представит возможные решения
+      <span style="display: block; text-align: left; padding-left: 1rem;">Мы предлагаем <span style="font-weight: 700;">выезд дизайнера</span> к вам домой за <span style="font-weight: 700;">наш счет</span>. Специалист выполнит замеры, представит возможные решения
         для вашего интерьера и предложит идеи по эффективному использованию пространства.</span><br>
-      <span style="display: block; text-align: left; padding-left: 1rem;">Если вы хотите обсудить детали и согласовать удобное время встречи, просто <span style="background-color: #4D220E; opacity: 0.5; color: white; padding-right: 5px; padding-left: 5px; line-height: 3rem;">оставьте заявку.</span></span>
+      <span style="display: block; text-align: left; padding-left: 1rem;">Если вы хотите обсудить детали и согласовать удобное время встречи, просто <span style="font-weight: 700;">оставьте заявку.</span></span>
       <img style="width: 100%;margin-top: -195px;margin-bottom: -210px;" src="content/img/ven.png" alt="">
     </div>
     <div class="background_services_right"></div>
@@ -148,9 +150,771 @@
           </div>
         </div>
       </div>
-      <!-- <a class="request openPopup">Оставить заявку</a> -->
+      <a class="request openPopup">Оставить заявку</a>
     </div>
-  </section>
+  </section> -->
+  <header>
+    <ul class="menu menu_spaces">
+      <li id="hallway_li" class="linkSecSection" onclick="showSectionLi('hallway_li');"><a id="hallway_a"
+          class="linkSecSectionA" onclick="showSection('hallway'); showSectionA('hallway_a');">Прихожие</a></li>
+      <li id="living_rooms_li" class="for_border linkSecSection" onclick="showSectionLi('living_rooms_li');"><a
+          id="living_rooms_a" class="linkSecSectionA"
+          onclick="showSection('living_rooms'); showSectionA('living_rooms_a');">Гостинные</a></li>
+      <li id="kitchens_li" class="for_border linkSecSection" onclick="showSectionLi('kitchens_li');"><a id="kitchens_a"
+          class="linkSecSectionA" onclick="showSection('kitchens'); showSectionA('kitchens_a');">Кухни</a></li>
+      <li id="workspaces_li" class="for_border linkSecSection" onclick="showSectionLi('workspaces_li');"><a
+          id="workspaces_a" class="linkSecSectionA"
+          onclick="showSection('workspaces'); showSectionA('workspaces_a');">Рабочие места</a></li>
+      <li id="bathrooms_li" class="for_border linkSecSection" onclick="showSectionLi('bathrooms_li');"><a
+          id="bathrooms_a" class="linkSecSectionA"
+          onclick="showSection('bathrooms'); showSectionA('bathrooms_a');">Ванные</a></li>
+      <li id="children_li" class="for_border linkSecSection" onclick="showSectionLi('children_li');"><a id="children_a"
+          class="linkSecSectionA" onclick="showSection('children'); showSectionA('children_a');">Детские</a></li>
+    </ul>
+  </header>
+  <div class="sections-container">
+    <div class="background_services_left sec_next_page"></div>
+    <div class="background_services_right sec_r_next_page"></div>
+    <section id="hallway" class="content-section">
+      <section id="approach" class="approach section-page" style="height: 100%;">
+
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots1"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots2"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay1" id="sliderOverlay1">
+        <div class="slider1" id="imageSlider1">
+          <span class="close-btn1" id="closeSlider1">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay2" id="sliderOverlay2">
+        <div class="slider2" id="imageSlider2">
+          <span class="close-btn2" id="closeSlider2">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider1').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots1').addEventListener('click', function () {
+          document.getElementById('sliderOverlay1').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider1').addEventListener('click', function () {
+          document.getElementById('sliderOverlay1').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay1').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider2').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots2').addEventListener('click', function () {
+          document.getElementById('sliderOverlay2').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider2').addEventListener('click', function () {
+          document.getElementById('sliderOverlay2').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay2').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots1').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay1');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider1').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots2').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay2');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider2').slick('setPosition');
+          }, 100);
+        });
+      </script>
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots3"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots4"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay3" id="sliderOverlay3">
+        <div class="slider3" id="imageSlider3">
+          <span class="close-btn3" id="closeSlider3">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay4" id="sliderOverlay4">
+        <div class="slider4" id="imageSlider4">
+          <span class="close-btn4" id="closeSlider4">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider3').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots3').addEventListener('click', function () {
+          document.getElementById('sliderOverlay3').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider3').addEventListener('click', function () {
+          document.getElementById('sliderOverlay3').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay3').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider4').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots4').addEventListener('click', function () {
+          document.getElementById('sliderOverlay4').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider4').addEventListener('click', function () {
+          document.getElementById('sliderOverlay4').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay4').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots3').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay3');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider3').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots4').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay4');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider4').slick('setPosition');
+          }, 100);
+        });
+      </script>
+
+    </section>
+
+    <section id="living_rooms" class="content-section">
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots5"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots6"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay5" id="sliderOverlay5">
+        <div class="slider5" id="imageSlider5">
+          <span class="close-btn5" id="closeSlider5">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay6" id="sliderOverlay6">
+        <div class="slider6" id="imageSlider6">
+          <span class="close-btn6" id="closeSlider6">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider5').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots5').addEventListener('click', function () {
+          document.getElementById('sliderOverlay5').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider5').addEventListener('click', function () {
+          document.getElementById('sliderOverlay1').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay5').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider6').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots6').addEventListener('click', function () {
+          document.getElementById('sliderOverlay6').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider6').addEventListener('click', function () {
+          document.getElementById('sliderOverlay6').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay6').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots5').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay5');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider5').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots6').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay6');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider6').slick('setPosition');
+          }, 100);
+        });
+      </script>
+
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots7"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots8"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay7" id="sliderOverlay7">
+        <div class="slider7" id="imageSlider7">
+          <span class="close-btn7" id="closeSlider7">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay8" id="sliderOverlay8">
+        <div class="slider8" id="imageSlider8">
+          <span class="close-btn8" id="closeSlider8">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider7').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots7').addEventListener('click', function () {
+          document.getElementById('sliderOverlay7').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider7').addEventListener('click', function () {
+          document.getElementById('sliderOverlay7').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay7').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider8').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots8').addEventListener('click', function () {
+          document.getElementById('sliderOverlay8').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider8').addEventListener('click', function () {
+          document.getElementById('sliderOverlay8').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay8').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots7').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay7');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider7').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots8').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay8');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider8').slick('setPosition');
+          }, 100);
+        });
+      </script>
+    </section>
+
+    <section id="kitchens" class="content-section">
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots9"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots10"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay9" id="sliderOverlay9">
+        <div class="slider9" id="imageSlider9">
+          <span class="close-btn9" id="closeSlider9">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay10" id="sliderOverlay10">
+        <div class="slider10" id="imageSlider10">
+          <span class="close-btn10" id="closeSlider10">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider9').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots9').addEventListener('click', function () {
+          document.getElementById('sliderOverlay9').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider9').addEventListener('click', function () {
+          document.getElementById('sliderOverlay9').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay9').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider10').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots10').addEventListener('click', function () {
+          document.getElementById('sliderOverlay10').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider10').addEventListener('click', function () {
+          document.getElementById('sliderOverlay10').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay10').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots9').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay9');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider9').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots10').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay10');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider10').slick('setPosition');
+          }, 100);
+        });
+      </script>
+
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots11"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots12"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay11" id="sliderOverlay11">
+        <div class="slider11" id="imageSlider11">
+          <span class="close-btn11" id="closeSlider11">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay12" id="sliderOverlay12">
+        <div class="slider12" id="imageSlider12">
+          <span class="close-btn12" id="closeSlider12">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider11').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots11').addEventListener('click', function () {
+          document.getElementById('sliderOverlay11').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider11').addEventListener('click', function () {
+          document.getElementById('sliderOverlay11').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay11').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider12').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots12').addEventListener('click', function () {
+          document.getElementById('sliderOverlay12').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider12').addEventListener('click', function () {
+          document.getElementById('sliderOverlay12').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay12').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots11').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay11');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider11').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots12').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay12');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider12').slick('setPosition');
+          }, 100);
+        });
+      </script>
+    </section>
+
+    <section id="workspaces" class="content-section">
+      <h2>Рабочие места</h2>
+      <p>Контент для рабочих мест...</p>
+    </section>
+
+    <section id="bathrooms" class="content-section">
+      <h2>Ванные</h2>
+      <p>Контент для ванных...</p>
+    </section>
+
+    <section id="children" class="content-section">
+      <h2>Детские</h2>
+      <p>Контент для детских...</p>
+    </section>
+  </div>
   <section id="approach" class="approach section-page">
     <div class="background_services_left sec"></div>
     <div class="background_services_right sec_r"></div>
@@ -332,7 +1096,7 @@
         <div class="popup-overlay_end">
           <h3 style="text-align: left;font-size: 2rem;padding-left: 0.5rem;margin-bottom: 1rem;">Остались вопросы?</h3>
           <div class="popup">
-            
+
             <form id="contactForm">
               <input style="font-family: 'Arsenal SC', serif;" type="text" name="name"
                 placeholder="Как к вам обращаться?" required>
@@ -513,6 +1277,8 @@
     });
 
 
+
+
     const pickr = Pickr.create({
       el: '.color-picker',
       theme: 'nano', // or 'monolith', or 'nano'
@@ -574,6 +1340,51 @@
     //     this.classList.toggle('open');
     //   });
     // });
+
+    function showSection(sectionId) {
+      // Скрываем все секции
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Показываем нужную секцию
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Устанавливаем начальную секцию (по умолчанию)
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('hallway'); // Можно поменять на любую другую секцию
+    });
+
+    function showSectionLi(sectionId) {
+      // Скрываем все секции
+      document.querySelectorAll('.linkSecSection').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Показываем нужную секцию
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Устанавливаем начальную секцию (по умолчанию)
+    document.addEventListener('DOMContentLoaded', () => {
+      showSectionLi('hallway_li'); // Можно поменять на любую другую секцию
+    });
+
+    function showSectionA(sectionId) {
+      // Скрываем все секции
+      document.querySelectorAll('.linkSecSectionA').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Показываем нужную секцию
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Устанавливаем начальную секцию (по умолчанию)
+    document.addEventListener('DOMContentLoaded', () => {
+      showSectionA('hallway_a'); // Можно поменять на любую другую секцию
+    });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
