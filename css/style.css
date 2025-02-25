@@ -2415,7 +2415,7 @@ a.current_dot {
   z-index: 10;
 }
 
-button:hover {
+.image-slider button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -2438,9 +2438,6 @@ button:hover {
   color: black;
 }
 
-.review-close-btn:hover {
-  color: red;
-}
 
 @-moz-document url-prefix() { /* Firefox Hack :( */
 .star-icon {
