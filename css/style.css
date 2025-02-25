@@ -138,8 +138,8 @@ body.modal-open {
 }
 
 .pickr .pcr-button {
-  height: 1rem;
-  width: 100%;
+  height: 1rem !important;
+  width: 100% !important;
 }
 
 .close-button {
@@ -465,6 +465,7 @@ body.modal-open {
   right: 0;
   width: 40%;
   height: 100%;
+  z-index: -1;
 }
 
 .slider li {
@@ -648,20 +649,42 @@ a.current_dot {
   border-right: 1px solid #000;
   padding: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 20rem;
-  margin-right: 20rem;
+  /* margin-top: 20rem;
+  margin-right: 20rem; */
   transition: all 0.3s ease;
   cursor: pointer;
   background-color: #000;
   color: #fff;
+  margin: 1rem;
+}
+
+.request_sec_plus {
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* margin-top: 20rem;
+  margin-right: 20rem; */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  margin: 1rem;
 }
 
 .request_sec:hover {
   transform: scale(1.05);
 }
 
+.request_sec_plus:hover {
+  transform: scale(1.05);
+}
+
 .sec {
-  top: 153rem;
+  top: 180rem;
   width: 63rem;
   height: 20rem;
   opacity: 50%;
@@ -706,15 +729,17 @@ a.current_dot {
 }
 
 .sec_1 {
-  top: 300rem;
+  top: 347rem;
   width: 63rem;
   height: 20rem;
+  opacity: 1;
 }
 
 .sec_r_1 {
-  bottom: -225rem;
+  bottom: -270rem;
   width: 63rem;
   height: 15rem;
+  opacity: 0.5;
 }
 
 .request_sec_1 {
@@ -726,15 +751,38 @@ a.current_dot {
   padding: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
-  margin-top: 18rem;
-  margin-right: 20rem;
+  /* margin-top: 18rem;
+  margin-right: 20rem; */
   transition: all 0.3s ease;
   cursor: pointer;
   background-color: #000;
   color: #fff;
+  margin: 1rem;
+}
+
+.request_sec_plus_1 {
+  display: block;
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  /* margin-top: 18rem;
+  margin-right: 20rem; */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  margin: 1rem;
 }
 
 .request_sec_1:hover {
+  transform: scale(1.05);
+}
+
+.request_sec_plus_1:hover {
   transform: scale(1.05);
 }
 
@@ -774,16 +822,19 @@ a.current_dot {
 
 .sec_r_next_page {
   bottom: -20rem;
+  opacity: 0.5;
 }
 
 .sec_next_page {
-  top: 96rem;
-  width: 60rem;
+  top: 78rem;
+  width: 63rem;
+  height: 20rem;
+  opacity: 1;
 
 }
 
 .whatis_approach {
-  color: #000;
+  color: #fff;
 }
 
 .img_approach_secpage {
@@ -815,23 +866,30 @@ a.current_dot {
 }
 
 .slick-dots {
+  align-items: center;
   list-style: none;
   text-align: center;
+  bottom: -50px !important;
 }
 
 .slick-dots button {
   font-size: 0;
-  width: 8px;
-  height: 8px;
+  width: 8px !important;
+  height: 8px !important;
   border: none;
   border-radius: 50%;
   padding: 0;
   margin: 0 auto;
 }
 
+.slick-dots li button:before {
+  display: none;
+}
+
 .slick-active button {
-  width: 16px;
-  height: 16px;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 3px !important;
 }
 
 .slick-initialized .reviews__item {
@@ -1068,6 +1126,7 @@ a.current_dot {
 }
 
 .slider-overlay1 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1106,6 +1165,7 @@ a.current_dot {
 }
 
 .slider-overlay2 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1140,6 +1200,7 @@ a.current_dot {
 }
 
 .slider-overlay3 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1174,6 +1235,7 @@ a.current_dot {
 }
 
 .slider-overlay4 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1197,7 +1259,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn4 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay5 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1221,7 +1294,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn5 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay6 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1245,7 +1329,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn6 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay7 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1269,7 +1364,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn7 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay8 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1293,7 +1399,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn8 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay9 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1317,7 +1434,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn9 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay10 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1341,7 +1469,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn10 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay11 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1365,7 +1504,18 @@ a.current_dot {
   max-width: 100%;
 }
 
+.close-btn11 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
 .slider-overlay12 {
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -1389,7 +1539,7 @@ a.current_dot {
   max-width: 100%;
 }
 
-.close-btn4 {
+.close-btn12 {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -1399,16 +1549,755 @@ a.current_dot {
   z-index: 10;
 }
 
-.content-section {
+.slider-overlay13 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider13 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider13 img {
+  max-width: 100%;
+}
+
+.close-btn13 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay14 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider14 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider14 img {
+  max-width: 100%;
+}
+
+.close-btn14 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay15 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider15 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider15 img {
+  max-width: 100%;
+}
+
+.close-btn15 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay16 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider16 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider16 img {
+  max-width: 100%;
+}
+
+.close-btn16 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay17 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider17 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider17 img {
+  max-width: 100%;
+}
+
+.close-btn17 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay18 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider18 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider18 img {
+  max-width: 100%;
+}
+
+.close-btn18 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay19 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider19 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider19 img {
+  max-width: 100%;
+}
+
+.close-btn19 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay20 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider20 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider20 img {
+  max-width: 100%;
+}
+
+.close-btn20 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay21 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider21 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider21 img {
+  max-width: 100%;
+}
+
+.close-btn21 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay22 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider22 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider22 img {
+  max-width: 100%;
+}
+
+.close-btn22 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay23 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider23 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider23 img {
+  max-width: 100%;
+}
+
+.close-btn23 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay24 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider24 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider24 img {
+  max-width: 100%;
+}
+
+.close-btn24 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay25 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider25 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider25 img {
+  max-width: 100%;
+}
+
+.close-btn25 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+/* .slider-overlay26 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider26 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider26 img {
+  max-width: 100%;
+}
+
+.close-btn26 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+} */
+
+.slider-overlay26 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider26 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider26 img {
+  max-width: 100%;
+}
+
+.close-btn26 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay27 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider27 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider27 img {
+  max-width: 100%;
+}
+
+.close-btn27 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay28 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider28 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider28 img {
+  max-width: 100%;
+}
+
+.close-btn28 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay29 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider29 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider29 img {
+  max-width: 100%;
+}
+
+.close-btn29 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay30 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider30 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider30 img {
+  max-width: 100%;
+}
+
+.close-btn30 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay31 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider31 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider31 img {
+  max-width: 100%;
+}
+
+.close-btn31 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+.slider-overlay32 {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider32 {
+  position: relative;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider32 img {
+  max-width: 100%;
+}
+
+.close-btn32 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  z-index: 10;
+}
+
+
+
+.content-section {
   display: none;
   opacity: 0;
-  transition: all .3 ease-in-out;
+  visibility: hidden; /* Скрываем секцию, чтобы не было резкого появления */
+  transition: opacity 0.1s ease-in-out, visibility 0s linear 0.1s; 
 }
 
 .content-section.active {
   display: block;
+  visibility: visible; /* Показываем секцию только после ее активации */
   opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .linkSecSection.active {
