@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="content/img/icon.jpg" type="image/jpg">
   <title>nextroom</title>
-  
+
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+  <!-- 'nano' theme -->
 </head>
 
 <body>
@@ -157,6 +158,20 @@
   </section> -->
 
   <section id="approach" class="approach section-page">
+    <div id="overlay"></div>
+    <div id="modal">
+      <button class="close-button" onclick="closeModal()">&times;</button>
+      <img style="width: 100%;margin-top: -212px;margin-bottom: -190px;" src="content/img/ven.png" alt="">
+      <span style="display: block; text-align: left; padding-left: 1rem;">Команда <b>NEXTROOM</b> рада приветствовать
+        вас!</span><br>
+      <span style="display: block; text-align: left; padding-left: 1rem;">Мы предлагаем <span
+          style="font-weight: 700;">выезд дизайнера</span> к вам домой за <span style="font-weight: 700;">наш
+          счет</span>. Специалист выполнит замеры, представит возможные решения
+        для вашего интерьера и предложит идеи по эффективному использованию пространства.</span><br>
+      <span style="display: block; text-align: left; padding-left: 1rem;">Если вы хотите обсудить детали и согласовать
+        удобное время встречи, просто <span style="font-weight: 700;">оставьте заявку.</span></span>
+      <img style="width: 100%;margin-top: -195px;margin-bottom: -210px;" src="content/img/ven.png" alt="">
+    </div>
     <div class="background_services_left sec"></div>
     <div class="background_services_right sec_r"></div>
     <div class="container">
@@ -2342,7 +2357,7 @@
   <div class="popup-overlay" id="popupOverlay">
     <div class="popup">
       <span class="close" id="closePopup">&times;</span>
-      <h2 style="font-family: 'Arsenal SC', serif; font-size: 2rem; margin-bottom: 1rem;">Оставьте заявку</h2>
+      <h2 style="font-family: 'Arsenal SC', serif; font-size: 2rem; margin-bottom: 1rem;">Калькулятор стоимости</h2>
       <form id="contactForm">
         <input style="font-family: 'Arsenal SC', serif;" type="text" name="name" placeholder="Как к вам обращаться?"
           required>
@@ -2416,7 +2431,7 @@
       window.addEventListener("scroll", function checkScroll() {
         if (modalShown) return;
 
-        let techSection = document.getElementById("services");
+        let techSection = document.getElementById("approach");
         let modal = document.getElementById("modal");
         let overlay = document.getElementById("overlay");
         let rect = techSection.getBoundingClientRect();
