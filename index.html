@@ -2162,61 +2162,134 @@
           <p class="reviews__item-name">
             Автор 1
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 1
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
         <div class="reviews__item">
           <p class="reviews__item-name">
             Автор 2
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon half">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 2
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
         <div class="reviews__item">
           <p class="reviews__item-name">
             Автор 3
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 3
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
         <div class="reviews__item">
           <p class="reviews__item-name">
             Автор 4
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon half">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 4
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
         <div class="reviews__item">
           <p class="reviews__item-name">
             Автор 5
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon half">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 5
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
         <div class="reviews__item">
           <p class="reviews__item-name">
             Автор 6
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 6
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
         <div class="reviews__item">
           <p class="reviews__item-name">
             Автор 7
           </p>
+          <div class="star">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon half">☆</span>
+          </div>
           <p class="reviews__item-text">
             Отзыв 7
           </p>
+          <a style="color: black; text-decoration: underline; cursor: pointer;" href="#">Подробнее</a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Модальное окно -->
+  <div id="review-modal" class="modal">
+    <div class="modal-content">
+      <span class="review-close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+
+      <!-- Слайдер для изображений -->
+      <div class="image-slider">
+        <button class="prev-btn">&#10094;</button>
+        <div id="modal-images" class="slider-images"></div>
+        <button class="next-btn">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
 
   <section id="tech" class="tech section-page">
     <div class="background_services_left sec_1"></div>
@@ -2647,6 +2720,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/any.js"></script>
+  <script src="js/rew.js"></script>
   <script src="js/main.js"></script>
 </body>
 
