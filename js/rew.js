@@ -15,27 +15,27 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       {
         author: "Автор 3",
-        text: "Полный текст отзыва 1.",
+        text: "Полный текст отзыва 3.",
         images: ["content/img/2.jpg", "content/img/13.png"]
       },
       {
         author: "Автор 4",
-        text: "Полный текст отзыва 2.",
+        text: "Полный текст отзыва 4.",
         images: ["content/img/2.jpg", "content/img/13.png"]
       },
       {
         author: "Автор 5",
-        text: "Полный текст отзыва 1.",
+        text: "Полный текст отзыва 5.",
         images: ["content/img/2.jpg", "content/img/13.png"]
       },
       {
         author: "Автор 6",
-        text: "Полный текст отзыва 2.",
+        text: "Полный текст отзыва 6.",
         images: ["content/img/2.jpg", "content/img/13.png"]
       },
       {
         author: "Автор 7",
-        text: "Полный текст отзыва 2.",
+        text: "Полный текст отзыва 7.",
         images: ["content/img/2.jpg", "content/img/13.png"]
       }
     ];
