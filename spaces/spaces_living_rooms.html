@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../content/img/icon.jpg" type="image/jpg">
+    <title>nextroom</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/jquery.fancybox.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <style>
+        .slider-overlay1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider1 {
+            position: relative;
+            width: 60%;
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slider1 img {
+            max-width: 100%;
+        }
+
+        .close-btn1 {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            z-index: 10;
+        }
+
+        .dots {
+            cursor: pointer;
+        }
+
+        .slider-overlay2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider2 {
+            position: relative;
+            width: 60%;
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slider2 img {
+            max-width: 100%;
+        }
+
+        .close-btn2 {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            z-index: 10;
+        }
+
+        .slider-overlay3 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider3 {
+            position: relative;
+            width: 60%;
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slider3 img {
+            max-width: 100%;
+        }
+
+        .close-btn3 {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            z-index: 10;
+        }
+
+        .slider-overlay4 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider4 {
+            position: relative;
+            width: 60%;
+            background: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slider4 img {
+            max-width: 100%;
+        }
+
+        .close-btn4 {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="menu menu_spaces">
+            <li><a href="../index.html"><img style="width: 50px; height: 50px; margin-right: 1rem;"
+                        src="../content/img/logo.jpg" alt=""></a></li>
+            <li><a href="../index.html">Главная</a></li>
+            <li class="for_border"><a href="../spaces/spaces_hallways.html">Прихожие</a></li>
+            <li style="background: #000;padding: 1rem;" class="for_border"><a style="color: #fff;"
+                    href="../spaces/spaces_living_rooms.html">Гостинные</a></li>
+            <li class="for_border"><a href="../spaces/spaces_kitchens.html">Кухни</a></li>
+            <li class="for_border"><a href="../spaces/spaces_work.html">Рабочие места</a></li>
+            <li class="for_border"><a href="../spaces/spaces_bathrooms.html">Ванные</a></li>
+            <li class="for_border"><a href="../spaces/spaces_children.html">Детские</a></li>
+        </ul>
+    </header>
+
+    <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+            <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                    <img style="margin-right: 1rem;" src="../content/img/12.png" alt="">
+                    <div class="another secpage">
+                        <img style="margin-bottom: 1rem;" src="../content/img/13.png" alt="">
+                        <img src="../content/img/14.png" alt="">
+                        <span class="dots" id="dots1"><a>. . .</a></span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                    <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+                </div>
+            </div>
+
+            <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                    <img style="margin-right: 1rem;" src="../content/img/12.png" alt="">
+                    <div class="another secpage">
+                        <img style="margin-bottom: 1rem;" src="../content/img/13.png" alt="">
+                        <img src="../content/img/14.png" alt="">
+                        <span class="dots" id="dots2"><a>. . .</a></span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                    <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slider-overlay1" id="sliderOverlay1">
+        <div class="slider1" id="imageSlider1">
+            <span class="close-btn1" id="closeSlider1">&times;</span>
+            <div><img src="../content/img/2.jpg" alt="Slider Image"></div>
+            <div><img src="../content/img/13.png" alt="Slider Image"></div>
+            <div><img src="../content/img/14.png" alt="Slider Image"></div>
+        </div>
+    </div>
+    <div class="slider-overlay2" id="sliderOverlay2">
+        <div class="slider2" id="imageSlider2">
+            <span class="close-btn2" id="closeSlider2">&times;</span>
+            <div><img src="../content/img/1.jpg" alt="Slider Image"></div>
+            <div><img src="../content/img/2.jpg" alt="Slider Image"></div>
+            <div><img src="../content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#imageSlider1').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+
+        document.getElementById('dots1').addEventListener('click', function () {
+            document.getElementById('sliderOverlay1').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider1').addEventListener('click', function () {
+            document.getElementById('sliderOverlay1').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay1').addEventListener('click', function (event) {
+            if (event.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        $(document).ready(function () {
+            $('#imageSlider2').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+
+        document.getElementById('dots2').addEventListener('click', function () {
+            document.getElementById('sliderOverlay2').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider2').addEventListener('click', function () {
+            document.getElementById('sliderOverlay2').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay2').addEventListener('click', function (event) {
+            if (event.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        document.getElementById('dots1').addEventListener('click', function () {
+            let sliderOverlay1 = document.getElementById('sliderOverlay1');
+            sliderOverlay1.style.display = 'flex';
+
+            setTimeout(function () {
+                $('#imageSlider1').slick('setPosition');
+            }, 100);
+        });
+
+        document.getElementById('dots2').addEventListener('click', function () {
+            let sliderOverlay2 = document.getElementById('sliderOverlay2');
+            sliderOverlay2.style.display = 'flex';
+
+            setTimeout(function () {
+                $('#imageSlider2').slick('setPosition');
+            }, 100);
+        });
+    </script>
+
+    <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+            <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                    <img style="margin-right: 1rem;" src="../content/img/12.png" alt="">
+                    <div class="another secpage">
+                        <img style="margin-bottom: 1rem;" src="../content/img/13.png" alt="">
+                        <img src="../content/img/14.png" alt="">
+                        <span class="dots" id="dots3"><a>. . .</a></span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                    <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+                </div>
+            </div>
+
+            <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                    <img style="margin-right: 1rem;" src="../content/img/12.png" alt="">
+                    <div class="another secpage">
+                        <img style="margin-bottom: 1rem;" src="../content/img/13.png" alt="">
+                        <img src="../content/img/14.png" alt="">
+                        <span class="dots" id="dots4"><a>. . .</a></span>
+                    </div>
+                </div>
+                <div class="price">
+                    <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                    <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slider-overlay3" id="sliderOverlay3">
+        <div class="slider3" id="imageSlider3">
+            <span class="close-btn3" id="closeSlider3">&times;</span>
+            <div><img src="../content/img/2.jpg" alt="Slider Image"></div>
+            <div><img src="../content/img/13.png" alt="Slider Image"></div>
+            <div><img src="../content/img/14.png" alt="Slider Image"></div>
+        </div>
+    </div>
+    <div class="slider-overlay4" id="sliderOverlay4">
+        <div class="slider4" id="imageSlider4">
+            <span class="close-btn4" id="closeSlider4">&times;</span>
+            <div><img src="../content/img/1.jpg" alt="Slider Image"></div>
+            <div><img src="../content/img/2.jpg" alt="Slider Image"></div>
+            <div><img src="../content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#imageSlider3').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+
+        document.getElementById('dots3').addEventListener('click', function () {
+            document.getElementById('sliderOverlay3').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider3').addEventListener('click', function () {
+            document.getElementById('sliderOverlay3').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay3').addEventListener('click', function (event) {
+            if (event.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        $(document).ready(function () {
+            $('#imageSlider4').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+
+        document.getElementById('dots4').addEventListener('click', function () {
+            document.getElementById('sliderOverlay4').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider4').addEventListener('click', function () {
+            document.getElementById('sliderOverlay4').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay4').addEventListener('click', function (event) {
+            if (event.target === this) {
+                this.style.display = 'none';
+            }
+        });
+
+        document.getElementById('dots3').addEventListener('click', function () {
+            let sliderOverlay1 = document.getElementById('sliderOverlay3');
+            sliderOverlay1.style.display = 'flex';
+
+            setTimeout(function () {
+                $('#imageSlider3').slick('setPosition');
+            }, 100);
+        });
+
+        document.getElementById('dots4').addEventListener('click', function () {
+            let sliderOverlay2 = document.getElementById('sliderOverlay4');
+            sliderOverlay2.style.display = 'flex';
+
+            setTimeout(function () {
+                $('#imageSlider4').slick('setPosition');
+            }, 100);
+        });
+    </script>
+
+
+
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <span class="close" id="closePopup">&times;</span>
+            <h2 style="font-family: 'Arsenal SC', serif; font-size: 2rem; margin-bottom: 1rem;">Оставьте заявку</h2>
+            <form id="contactForm">
+                <input style="font-family: 'Arsenal SC', serif;" type="text" name="name"
+                    placeholder="Как к вам обращаться?" required>
+
+                <div class="custom-select" id="furnitureSelect">
+                    <div style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;"
+                        class="select-trigger">
+                        Выберите тип мебели</div>
+                    <div class="select-dropdown">
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="Шкаф">
+                            Шкаф</label>
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="Кухня">
+                            Кухня</label>
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="Стол">
+                            Стол</label>
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="Тумба">
+                            Тумба</label>
+                    </div>
+                </div>
+
+                <input style="font-family: 'Arsenal SC', serif;" id="size" type="text" name="dimensions"
+                    placeholder="Размеры (120x200x60)" required>
+
+                <div class="custom-select" id="materialSelect">
+                    <div style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;"
+                        class="select-trigger">
+                        Выберите материалы</div>
+                    <div class="select-dropdown">
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="Дерево">
+                            Дерево</label>
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="ЛДСП">
+                            ЛДСП</label>
+                        <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox"
+                                value="МДФ">
+                            МДФ</label>
+                    </div>
+                </div>
+
+                <div class="colorBox">
+                    <label style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;">Цвет:</label>
+                    <div class="color-picker"></div>
+                </div>
+
+                <input style="font-family: 'Arsenal SC', serif;" type="tel" name="phone" placeholder="Телефон для связи"
+                    required>
+                <input style="font-family: 'Arsenal SC', serif;" type="email" name="email" placeholder="Почта" required>
+                <textarea style="font-family: 'Arsenal SC', serif;" name="message"
+                    placeholder="Возможные пожелания"></textarea>
+
+                <label class="file-upload">
+                    <input style="font-family: 'Arsenal SC', serif;" type="file" name="inspiration" accept="image/*"
+                        placeholder="Прикрепите изображение">
+                    <span
+                        style="font-family: 'Arsenal SC', serif; font-size: 1rem; opacity: 0.7;letter-spacing: 1px;">Прикрепите
+                        изображение</span>
+                    <span class="file-name" style="font-family: 'Arsenal SC', serif; opacity: 0.7;">+</span>
+                </label>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script>
+        let modalShown = false;
+        let scrollPosition = 0;
+
+        function closeModal() {
+            document.getElementById("modal").classList.remove("show");
+            document.getElementById("overlay").classList.remove("show");
+            document.documentElement.style.overflow = "";
+            window.scrollTo(0, scrollPosition);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("scroll", function checkScroll() {
+                if (modalShown) return;
+
+                let techSection = document.getElementById("services");
+                let modal = document.getElementById("modal");
+                let overlay = document.getElementById("overlay");
+                let rect = techSection.getBoundingClientRect();
+
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    scrollPosition = window.scrollY;
+                    modal.classList.add("show");
+                    overlay.classList.add("show");
+                    document.documentElement.style.overflow = "hidden";
+
+                    modalShown = true;
+                    window.removeEventListener("scroll", checkScroll);
+                }
+            });
+
+            let materialSelect = document.getElementById('materialSelect');
+            let furnitureSelect = document.getElementById('furnitureSelect');
+
+            let materialTrigger = materialSelect.querySelector('.select-trigger');
+            let furnitureTrigger = furnitureSelect.querySelector('.select-trigger');
+
+            let materialCheckboxes = materialSelect.querySelectorAll('.select-dropdown input');
+            let furnitureCheckboxes = furnitureSelect.querySelectorAll('.select-dropdown input');
+
+
+
+            function updateSelectedText(trigger, checkboxes) {
+                let selected = Array.from(checkboxes)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
+
+                trigger.textContent = selected.length ? selected.join(', ') : 'Выберите';
+            }
+
+            materialCheckboxes.forEach(checkbox => checkbox.addEventListener('change', () => updateSelectedText(materialTrigger, materialCheckboxes)));
+            furnitureCheckboxes.forEach(checkbox => checkbox.addEventListener('change', () => updateSelectedText(furnitureTrigger, furnitureCheckboxes)));
+
+            function setupDropdown(selectElement, trigger) {
+                trigger.addEventListener('click', function () {
+                    selectElement.classList.toggle('open');
+                });
+
+                document.addEventListener('click', function (e) {
+                    if (!selectElement.contains(e.target)) {
+                        selectElement.classList.remove('open');
+                    }
+                });
+            }
+
+            setupDropdown(materialSelect, materialTrigger);
+            setupDropdown(furnitureSelect, furnitureTrigger);
+        });
+
+        document.querySelectorAll('.openPopup').forEach(button => {
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('popupOverlay').style.display = 'flex';
+            });
+        });
+        document.getElementById('closePopup').addEventListener('click', function () {
+            document.getElementById('popupOverlay').style.display = 'none';
+        });
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Форма отправлена!');
+            document.getElementById('popupOverlay').style.display = 'none';
+        });
+        document.querySelector('.file-upload input').addEventListener('change', function () {
+            let fileName = this.files[0] ? this.files[0].name : "+";
+            document.querySelector('.file-name').textContent = fileName;
+        });
+
+
+        const pickr = Pickr.create({
+            el: '.color-picker',
+            theme: 'nano', // or 'monolith', or 'nano'
+
+            swatches: [
+                'rgba(244, 67, 54, 1)',
+                'rgba(233, 30, 99, 0.95)',
+                'rgba(156, 39, 176, 0.9)',
+                'rgba(103, 58, 183, 0.85)',
+                'rgba(63, 81, 181, 0.8)',
+                'rgba(33, 150, 243, 0.75)',
+                'rgba(3, 169, 244, 0.7)',
+                'rgba(0, 188, 212, 0.7)',
+                'rgba(0, 150, 136, 0.75)',
+                'rgba(76, 175, 80, 0.8)',
+                'rgba(139, 195, 74, 0.85)',
+                'rgba(205, 220, 57, 0.9)',
+                'rgba(255, 235, 59, 0.95)',
+                'rgba(255, 193, 7, 1)'
+            ],
+
+            components: {
+
+                // Main components
+                preview: true,
+                opacity: true,
+                hue: true,
+
+                // Input / output Options
+                interaction: {
+                    hex: false,
+                    rgba: false,
+                    hsla: false,
+                    hsva: false,
+                    cmyk: false,
+                    input: true,
+                    clear: false,
+                    save: true
+                }
+            },
+
+            i18n: {
+
+                'btn:save': 'Ok',
+
+            }
+        });
+
+        pickr.on('save', (color, instance) => {
+            instance.hide();
+        });
+
+        pickr.on('init', instance => {
+            document.querySelector('.pcr-app').style.width = '300px';
+        });
+
+        // document.querySelectorAll('.custom-select').forEach(select => {
+        //   select.addEventListener('click', function () {
+        //     this.classList.toggle('open');
+        //   });
+        // });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.fancybox.min.js"></script>
+    <script src="../js/any.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

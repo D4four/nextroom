@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="content/img/icon.jpg" type="image/jpg">
+  <title>nextroom</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="content/img/logo.jpg" alt="Загрузка..." id="loader-image">
+  </div>
+
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        let preloader = document.getElementById("preloader");
+        preloader.classList.add("fade-out");
+
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 500);
+      }, 500);
+    });
+  </script>
+  <header id="content" class="intro">
+    <div class="left">
+      <div class="inner_left">
+        <h1 class="title">NEXTROOM</h1>
+        <p class="subtitle">мы создаём не просто мебель – мы воплощаем индивидуальность и стиль каждого клиента,
+          объединяя премиальное качество, безупречный дизайн и эксклюзивный подход в каждом изделии.</p>
+        <ul class="menu">
+          <li><a href="#services">Каталог</a></li>
+          <li class="for_border"><a href="#approach">Наш подход</a></li>
+          <li class="for_border"><a href="#reviews">Отзывы</a></li>
+          <li class="for_border"><a href="#tech">Технологии и материалы</a></li>
+          <li class="for_border"><a href="#faq">FAQ</a></li>
+          <li class="for_border"><a href="#end">Контакты</a></li>
+        </ul>
+        <div class="bottom_text">
+          <p class="bottom_text_item_1"></p>
+          <p class="bottom_text_item_2"></p>
+        </div>
+        <div class="bottom_about">
+          <!-- <img src="content/img/quotes.png" alt=""> -->
+          <p class="bottom_about_text">Каждая деталь этой комнаты создана с учётом индивидуальных пожеланий клиента,
+            отражая их стиль, потребности и уникальный вкус.</p>
+        </div>
+        <div class="connect">
+          <a style="color: black;" href="tel:+79117985578">+7 911 798 55 78</a>
+          <a class="icons" href="https://t.me/+79117985578"><img src="content/img/teleg.png" alt=""></a>
+          <a href="https://api.whatsapp.com/send/?phone=79117985578&text&type=phone_number&app_absent=0"><img
+              src="content/img/whatsapp.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <ul>
+        <li style="background-image:url('content/img/1.jpg')">
+          <div class="center-y"></div>
+        </li>
+        <li style="background-image:url('content/img/2.jpg')">
+          <div class="center-y"></div>
+        </li>
+        <li style="background-image:url('content/img/3.jpg')">
+          <div class="center-y"></div>
+        </li>
+      </ul>
+
+      <ul>
+        <nav>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </nav>
+      </ul>
+    </div>
+  </header>
+  <!-- <section id="services" class="services section-page">
+    <div id="overlay"></div>
+    <div id="modal">
+      <button class="close-button" onclick="closeModal()">&times;</button>
+      <img style="width: 100%;margin-top: -212px;margin-bottom: -190px;" src="content/img/ven.png" alt="">
+      <span style="display: block; text-align: left; padding-left: 1rem;">Команда <b>NEXTROOM</b> рада приветствовать вас!</span><br>
+      <span style="display: block; text-align: left; padding-left: 1rem;">Мы предлагаем <span style="font-weight: 700;">выезд дизайнера</span> к вам домой за <span style="font-weight: 700;">наш счет</span>. Специалист выполнит замеры, представит возможные решения
+        для вашего интерьера и предложит идеи по эффективному использованию пространства.</span><br>
+      <span style="display: block; text-align: left; padding-left: 1rem;">Если вы хотите обсудить детали и согласовать удобное время встречи, просто <span style="font-weight: 700;">оставьте заявку.</span></span>
+      <img style="width: 100%;margin-top: -195px;margin-bottom: -210px;" src="content/img/ven.png" alt="">
+    </div>
+    <div class="background_services_right"></div>
+    <div class="background_services_left"></div>
+    <div class="container">
+      <div class="services">
+        <div class="spaces">
+          <div class="individ">
+            <a style="display: flex;" href="spaces/spaces_hallways.html">
+              <img class="services_img" style="max-width: 100%; height: auto;" src="content/img/individ.png" alt="">
+              <div class="hover_overlay_text">посмотреть</div>
+            </a>
+            <p class="services_title services_title_individ"><a href="spaces/spaces_hallways.html" style="color: black;">прихожие</a></p>
+            <p class="services_subtitle services_subtitle_individ">идеальное сочетание стиля, качества и
+              индивидуальности.</p>
+          </div>
+          <div class="soft">
+            <a><img style="max-width: 100%; height: auto;" src="content/img/soft.png" alt="">
+            <p class="services_title services_title_soft">шкафы</p>
+            <p class="services_subtitle services_subtitle_soft">сочетает в себе непревзойденный комфорт, изысканный
+              дизайн и идеальное
+              соответствие вашему интерьеру.</p>
+          </div>
+        </div>
+        <div class="furniture">
+          <div class="individ">
+            <img style="max-width: 100%; height: auto;" src="content/img/individ.png" alt="">
+            <p class="services_title services_title_individ"><a>кухни</a></p>
+            <p class="services_subtitle services_subtitle_individ">идеальное сочетание стиля, качества и
+              индивидуальности.</p>
+          </div>
+          <div class="soft">
+            <img style="max-width: 100%; height: auto;" src="content/img/soft.png" alt="">
+            <p class="services_title services_title_soft">рабочие места</p>
+            <p class="services_subtitle services_subtitle_soft">сочетает в себе непревзойденный комфорт, изысканный
+              дизайн и идеальное
+              соответствие вашему интерьеру.</p>
+          </div>
+        </div>
+        <div class="interior">
+          <div class="individ">
+            <img style="max-width: 100%; height: auto;" src="content/img/individ.png" alt="">
+            <p class="services_title services_title_individ"><a>ванные комнаты</a></p>
+            <p class="services_subtitle services_subtitle_individ">идеальное сочетание стиля, качества и
+              индивидуальности.</p>
+          </div>
+          <div class="soft">
+            <img style="max-width: 100%; height: auto;" src="content/img/soft.png" alt="">
+            <p class="services_title services_title_soft">детские и спальни</p>
+            <p class="services_subtitle services_subtitle_soft">сочетает в себе непревзойденный комфорт, изысканный
+              дизайн и идеальное
+              соответствие вашему интерьеру.</p>
+          </div>
+        </div>
+      </div>
+      <a class="request openPopup">Оставить заявку</a>
+    </div>
+  </section> -->
+  <header>
+    <ul class="menu menu_spaces">
+      <li id="hallway_li" class="linkSecSection" onclick="showSectionLi('hallway_li');"><a id="hallway_a"
+          class="linkSecSectionA" onclick="showSection('hallway'); showSectionA('hallway_a');">Прихожие</a></li>
+      <li id="living_rooms_li" class="for_border linkSecSection" onclick="showSectionLi('living_rooms_li');"><a
+          id="living_rooms_a" class="linkSecSectionA"
+          onclick="showSection('living_rooms'); showSectionA('living_rooms_a');">Гостинные</a></li>
+      <li id="kitchens_li" class="for_border linkSecSection" onclick="showSectionLi('kitchens_li');"><a id="kitchens_a"
+          class="linkSecSectionA" onclick="showSection('kitchens'); showSectionA('kitchens_a');">Кухни</a></li>
+      <li id="workspaces_li" class="for_border linkSecSection" onclick="showSectionLi('workspaces_li');"><a
+          id="workspaces_a" class="linkSecSectionA"
+          onclick="showSection('workspaces'); showSectionA('workspaces_a');">Рабочие места</a></li>
+      <li id="bathrooms_li" class="for_border linkSecSection" onclick="showSectionLi('bathrooms_li');"><a
+          id="bathrooms_a" class="linkSecSectionA"
+          onclick="showSection('bathrooms'); showSectionA('bathrooms_a');">Ванные</a></li>
+      <li id="children_li" class="for_border linkSecSection" onclick="showSectionLi('children_li');"><a id="children_a"
+          class="linkSecSectionA" onclick="showSection('children'); showSectionA('children_a');">Детские</a></li>
+    </ul>
+  </header>
+  <style>
+    .slider-overlay-custom {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-custom {
+      position: relative;
+      width: 60%;
+      background: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .slider-custom img {
+      max-width: 100%;
+    }
+
+    .close-btn-custom {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+      z-index: 10;
+    }
+
+    .dots-custom {
+      cursor: pointer;
+    }
+  </style>
+  <div class="sections-container">
+    <div class="background_services_left sec_next_page"></div>
+    <div class="background_services_right sec_r_next_page"></div>
+    <section id="hallway" class="content-section">
+      <section id="approach" class="approach section-page">
+        <div class="container" style="display: flex; justify-content: space-around;">
+          <div class="content_approach">
+            <div class="img_approach_secpage">
+              <img src="content/img/12.png" alt="" class="preview">
+              <div class="another secpage">
+                <img src="content/img/13.png" alt="" class="preview">
+                <img src="content/img/14.png" alt="" class="preview">
+                <span class="dots-custom"
+                  data-images='["content/img/12.png", "content/img/13.png", "content/img/14.png"]'>. . .</span>
+              </div>
+            </div>
+          </div>
+          <div class="content_approach">
+            <div class="img_approach_secpage">
+              <img src="content/img/15.png" alt="" class="preview">
+              <div class="another secpage">
+                <img src="content/img/16.png" alt="" class="preview">
+                <img src="content/img/17.png" alt="" class="preview">
+                <span class="dots-custom"
+                  data-images='["content/img/15.png", "content/img/16.png", "content/img/17.png"]'>. . .</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay-custom" id="sliderOverlay">
+        <div class="slider-custom" id="imageSliderContainer">
+          <span class="close-btn-custom" id="closeSlider">&times;</span>
+          <div id="imageSlider"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.dots-custom').on('click', function () {
+            let images = JSON.parse(this.getAttribute('data-images'));
+            let slider = $('#imageSlider');
+            if (slider.hasClass('slick-initialized')) {
+              slider.slick('unslick');
+            }
+            slider.empty();
+            images.forEach(img => {
+              slider.append(`<div><img src="${img}" alt="Slider Image"></div>`);
+            });
+            slider.slick({
+              dots: true,
+              infinite: true,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            });
+            $('#sliderOverlay').css('display', 'flex');
+          });
+
+          $('#closeSlider').on('click', function () {
+            $('#sliderOverlay').css('display', 'none');
+          });
+
+          $('#sliderOverlay').on('click', function (event) {
+            if (event.target === this) {
+              $(this).css('display', 'none');
+            }
+          });
+        });
+      </script>
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots3"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots4"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay3" id="sliderOverlay3">
+        <div class="slider3" id="imageSlider3">
+          <span class="close-btn3" id="closeSlider3">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay4" id="sliderOverlay4">
+        <div class="slider4" id="imageSlider4">
+          <span class="close-btn4" id="closeSlider4">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider3').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots3').addEventListener('click', function () {
+          document.getElementById('sliderOverlay3').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider3').addEventListener('click', function () {
+          document.getElementById('sliderOverlay3').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay3').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider4').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots4').addEventListener('click', function () {
+          document.getElementById('sliderOverlay4').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider4').addEventListener('click', function () {
+          document.getElementById('sliderOverlay4').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay4').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots3').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay3');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider3').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots4').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay4');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider4').slick('setPosition');
+          }, 100);
+        });
+      </script>
+
+    </section>
+
+    <section id="living_rooms" class="content-section">
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots5"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots6"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay5" id="sliderOverlay5">
+        <div class="slider5" id="imageSlider5">
+          <span class="close-btn5" id="closeSlider5">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay6" id="sliderOverlay6">
+        <div class="slider6" id="imageSlider6">
+          <span class="close-btn6" id="closeSlider6">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider5').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots5').addEventListener('click', function () {
+          document.getElementById('sliderOverlay5').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider5').addEventListener('click', function () {
+          document.getElementById('sliderOverlay1').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay5').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider6').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots6').addEventListener('click', function () {
+          document.getElementById('sliderOverlay6').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider6').addEventListener('click', function () {
+          document.getElementById('sliderOverlay6').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay6').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots5').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay5');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider5').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots6').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay6');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider6').slick('setPosition');
+          }, 100);
+        });
+      </script>
+
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots7"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots8"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay7" id="sliderOverlay7">
+        <div class="slider7" id="imageSlider7">
+          <span class="close-btn7" id="closeSlider7">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay8" id="sliderOverlay8">
+        <div class="slider8" id="imageSlider8">
+          <span class="close-btn8" id="closeSlider8">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider7').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots7').addEventListener('click', function () {
+          document.getElementById('sliderOverlay7').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider7').addEventListener('click', function () {
+          document.getElementById('sliderOverlay7').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay7').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider8').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots8').addEventListener('click', function () {
+          document.getElementById('sliderOverlay8').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider8').addEventListener('click', function () {
+          document.getElementById('sliderOverlay8').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay8').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots7').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay7');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider7').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots8').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay8');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider8').slick('setPosition');
+          }, 100);
+        });
+      </script>
+    </section>
+
+    <section id="kitchens" class="content-section">
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots9"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots10"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay9" id="sliderOverlay9">
+        <div class="slider9" id="imageSlider9">
+          <span class="close-btn9" id="closeSlider9">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay10" id="sliderOverlay10">
+        <div class="slider10" id="imageSlider10">
+          <span class="close-btn10" id="closeSlider10">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider9').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots9').addEventListener('click', function () {
+          document.getElementById('sliderOverlay9').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider9').addEventListener('click', function () {
+          document.getElementById('sliderOverlay9').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay9').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider10').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots10').addEventListener('click', function () {
+          document.getElementById('sliderOverlay10').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider10').addEventListener('click', function () {
+          document.getElementById('sliderOverlay10').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay10').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots9').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay9');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider9').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots10').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay10');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider10').slick('setPosition');
+          }, 100);
+        });
+      </script>
+
+      <section id="approach" class="approach section-page" style="height: 100%;">
+        <div class="background_services_left sec_next_page"></div>
+        <div class="background_services_right sec_r_next_page"></div>
+        <div class="container" style="display: flex;flex-direction: row;justify-content: space-around;margin: 0;">
+          <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots11"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+
+          <div class="content_approach content_approach_spaces">
+            <div class="img_approach_secpage img_approach_secpage_spaces">
+              <img style="margin-right: 1rem;" src="content/img/12.png" alt="">
+              <div class="another secpage">
+                <img style="margin-bottom: 1rem;" src="content/img/13.png" alt="">
+                <img src="content/img/14.png" alt="">
+                <span class="dots" id="dots12"><a>. . .</a></span>
+              </div>
+            </div>
+            <div class="price">
+              <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+              <span style="font-size: 1.5rem;opacity: 0.5;margin-top: 1rem;">Описание...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slider-overlay11" id="sliderOverlay11">
+        <div class="slider11" id="imageSlider11">
+          <span class="close-btn11" id="closeSlider11">&times;</span>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/13.png" alt="Slider Image"></div>
+          <div><img src="content/img/14.png" alt="Slider Image"></div>
+        </div>
+      </div>
+      <div class="slider-overlay12" id="sliderOverlay12">
+        <div class="slider12" id="imageSlider12">
+          <span class="close-btn12" id="closeSlider12">&times;</span>
+          <div><img src="content/img/1.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/3.jpg" alt="Slider Image"></div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#imageSlider11').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots11').addEventListener('click', function () {
+          document.getElementById('sliderOverlay11').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider11').addEventListener('click', function () {
+          document.getElementById('sliderOverlay11').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay11').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        $(document).ready(function () {
+          $('#imageSlider12').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          });
+        });
+
+        document.getElementById('dots12').addEventListener('click', function () {
+          document.getElementById('sliderOverlay12').style.display = 'flex';
+        });
+
+        document.getElementById('closeSlider12').addEventListener('click', function () {
+          document.getElementById('sliderOverlay12').style.display = 'none';
+        });
+        document.getElementById('sliderOverlay12').addEventListener('click', function (event) {
+          if (event.target === this) {
+            this.style.display = 'none';
+          }
+        });
+
+        document.getElementById('dots11').addEventListener('click', function () {
+          let sliderOverlay1 = document.getElementById('sliderOverlay11');
+          sliderOverlay1.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider11').slick('setPosition');
+          }, 100);
+        });
+
+        document.getElementById('dots12').addEventListener('click', function () {
+          let sliderOverlay2 = document.getElementById('sliderOverlay12');
+          sliderOverlay2.style.display = 'flex';
+
+          setTimeout(function () {
+            $('#imageSlider12').slick('setPosition');
+          }, 100);
+        });
+      </script>
+    </section>
+
+    <section id="workspaces" class="content-section">
+      <h2>Рабочие места</h2>
+      <p>Контент для рабочих мест...</p>
+    </section>
+
+    <section id="bathrooms" class="content-section">
+      <h2>Ванные</h2>
+      <p>Контент для ванных...</p>
+    </section>
+
+    <section id="children" class="content-section">
+      <h2>Детские</h2>
+      <p>Контент для детских...</p>
+    </section>
+  </div>
+  <section id="approach" class="approach section-page">
+    <div class="background_services_left sec"></div>
+    <div class="background_services_right sec_r"></div>
+    <div class="container">
+      <div class="content_approach">
+        <div class="text_approach">
+          <p class="whatis_approach">Создание уникальных интерьеров – это искусство, и мы подходим к каждому проекту
+            с особой заботой и вниманием, достойными премиального уровня. Наш подход основан на трех ключевых принципах:
+            индивидуальность, безупречное качество и стремление превзойти ваши ожидания.</p>
+          <ul class="approach_list">
+            <li>
+              <p class="title_approach">15 лет</p>
+              <p class="subtitle_approach">гарантия</p>
+            </li>
+            <li>
+              <p class="title_approach">Дизайн - проект</p>
+              <p class="subtitle_approach">за наш счет</p>
+            </li>
+            <li>
+              <p class="title_approach">Клининг</p>
+              <p class="subtitle_approach">после монтажа</p>
+            </li>
+          </ul>
+          <a class="request_sec openPopup">Оставить заявку</a>
+        </div>
+        <div class="img_approach">
+          <img src="content/img/6.png" alt="">
+          <img src="content/img/7.png" alt="">
+          <img src="content/img/8.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews section-page">
+    <div class="container">
+      <div class="reviews__slider">
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 1
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 1
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 2
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 2
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 3
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 3
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 4
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 4
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 5
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 5
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 6
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 6
+          </p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__item-name">
+            Автор 7
+          </p>
+          <p class="reviews__item-text">
+            Отзыв 7
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tech" class="tech section-page">
+    <div class="background_services_left sec_1"></div>
+    <div class="background_services_right sec_r_1"></div>
+    <div class="container">
+      <div class="content_tech">
+        <div class="text_tech">
+          <p class="whatis_tech">Мы используем только самые современные технологии и премиальные материалы, чтобы
+            создавать уникальные и долговечные пространства, которые отвечают вашим высоким стандартам. Наша команда
+            уделяет внимание каждой детали, чтобы воплотить в жизнь интерьеры, сочетающие эстетичность, функциональность
+            и надежность.</p>
+          <ul class="tech_list">
+            <li>
+              <p class="title_tech">&bull; Прецизионное производство</p>
+            </li>
+            <li>
+              <p class="title_tech">&bull; Инновационные решения</p>
+            </li>
+            <li>
+              <p class="title_tech">&bull; Инновационные решения</p>
+            </li>
+          </ul>
+          <a class="request_sec_1 openPopup">Оставить заявку</a>
+        </div>
+        <div class="img_approach">
+          <img src="content/img/9.png" alt="">
+          <img src="content/img/10.png" alt="">
+          <img src="content/img/11.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq section-page">
+    <div class="container" style="position: relative;top: 35%;">
+      <div class="questions">
+        <div class="questions__item">
+          <div class="accordion">
+            <div class="accordion__item" data-collapse="#questions_1">
+              <div class="accordion__header">
+                <div class="accordion__title">Как проходит процесс работы?</div>
+              </div>
+              <div class="accordion__content" id="questions_1">
+                <p>Ответ 1</p>
+              </div>
+            </div>
+
+            <div class="accordion__item" data-collapse="#questions_2">
+              <div class="accordion__header">
+                <div class="accordion__title">Какие материалы используются?</div>
+              </div>
+              <div class="accordion__content" id="questions_2">
+                <p>Ответ 2</p>
+              </div>
+            </div>
+
+            <div class="accordion__item" data-collapse="#questions_3">
+              <div class="accordion__header">
+                <div class="accordion__title">Сколько стоит замер?</div>
+              </div>
+              <div class="accordion__content" id="questions_3">
+                <p>Ответ 3</p>
+              </div>
+            </div>
+            <div class="accordion__item" data-collapse="#questions_3">
+              <div class="accordion__header">
+                <div class="accordion__title">Как долго занимает изготовление?</div>
+              </div>
+              <div class="accordion__content" id="questions_3">
+                <p>Ответ 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="end" class="end section-page">
+    <div class="container">
+      <div class="for_item">
+        <div class="popup-overlay_end">
+          <h3 style="text-align: left;font-size: 2rem;padding-left: 0.5rem;margin-bottom: 1rem;">Остались вопросы?</h3>
+          <div class="popup">
+
+            <form id="contactForm">
+              <input style="font-family: 'Arsenal SC', serif;" type="text" name="name"
+                placeholder="Как к вам обращаться?" required>
+
+              <input style="font-family: 'Arsenal SC', serif;" type="tel" name="phone" placeholder="Телефон для связи"
+                required>
+              <input style="font-family: 'Arsenal SC', serif;" type="email" name="email" placeholder="Почта" required>
+              <textarea style="font-family: 'Arsenal SC', serif;" name="message" placeholder="Комментарий"></textarea>
+
+
+
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <!-- <img class="sign" src="content/img/sign_pre.png" alt=""> -->
+        <p class="auth_text">За время работы компании, мне посчастливилось участвовать в реализации знаковых проектов, в
+          команде одних из лучших дизайнеров РФ. Этот уникальный опыт я использую в своей авторской работе на протяжении
+          многих лет.</p>
+        <img class="photo" src="content/img/photo.png" alt="">
+      </div>
+      <ul class="end_list">
+        <li>ООО"NEXTROOM"</li>
+        <li>ИНН: 123456789</li>
+        <li>ОГРН: 545456465456</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <h2 style="font-family: 'Arsenal SC', serif; font-size: 2rem; margin-bottom: 1rem;">Оставьте заявку</h2>
+      <form id="contactForm">
+        <input style="font-family: 'Arsenal SC', serif;" type="text" name="name" placeholder="Как к вам обращаться?"
+          required>
+
+        <div class="custom-select" id="furnitureSelect">
+          <div style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;" class="select-trigger">
+            Выберите тип мебели</div>
+          <div class="select-dropdown">
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Шкаф">
+              Шкаф</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Кухня">
+              Кухня</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Стол">
+              Стол</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Тумба">
+              Тумба</label>
+          </div>
+        </div>
+
+        <input style="font-family: 'Arsenal SC', serif;" id="size" type="text" name="dimensions"
+          placeholder="Размеры (120x200x60)" required>
+
+        <div class="custom-select" id="materialSelect">
+          <div style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;" class="select-trigger">
+            Выберите материалы</div>
+          <div class="select-dropdown">
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="Дерево">
+              Дерево</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="ЛДСП">
+              ЛДСП</label>
+            <label><input style="display: none; font-family: 'Arsenal SC', serif;" type="checkbox" value="МДФ">
+              МДФ</label>
+          </div>
+        </div>
+
+        <div class="colorBox">
+          <label style="opacity: 0.7; font-family: 'Arsenal SC', serif; letter-spacing: 1px;">Цвет:</label>
+          <div class="color-picker"></div>
+        </div>
+
+        <input style="font-family: 'Arsenal SC', serif;" type="tel" name="phone" placeholder="Телефон для связи"
+          required>
+        <input style="font-family: 'Arsenal SC', serif;" type="email" name="email" placeholder="Почта" required>
+        <textarea style="font-family: 'Arsenal SC', serif;" name="message" placeholder="Возможные пожелания"></textarea>
+
+        <label class="file-upload">
+          <input style="font-family: 'Arsenal SC', serif;" type="file" name="inspiration" accept="image/*"
+            placeholder="Прикрепите изображение">
+          <span style="font-family: 'Arsenal SC', serif; font-size: 1rem; opacity: 0.7;letter-spacing: 1px;">Прикрепите
+            изображение</span>
+          <span class="file-name" style="font-family: 'Arsenal SC', serif; opacity: 0.7;">+</span>
+        </label>
+
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+  <script>
+    let modalShown = false;
+    let scrollPosition = 0;
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("show");
+      document.getElementById("overlay").classList.remove("show");
+      document.documentElement.style.overflow = "";
+      window.scrollTo(0, scrollPosition);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      window.addEventListener("scroll", function checkScroll() {
+        if (modalShown) return;
+
+        let techSection = document.getElementById("services");
+        let modal = document.getElementById("modal");
+        let overlay = document.getElementById("overlay");
+        let rect = techSection.getBoundingClientRect();
+
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          scrollPosition = window.scrollY;
+          modal.classList.add("show");
+          overlay.classList.add("show");
+          document.documentElement.style.overflow = "hidden";
+
+          modalShown = true;
+          window.removeEventListener("scroll", checkScroll);
+        }
+      });
+
+      let materialSelect = document.getElementById('materialSelect');
+      let furnitureSelect = document.getElementById('furnitureSelect');
+
+      let materialTrigger = materialSelect.querySelector('.select-trigger');
+      let furnitureTrigger = furnitureSelect.querySelector('.select-trigger');
+
+      let materialCheckboxes = materialSelect.querySelectorAll('.select-dropdown input');
+      let furnitureCheckboxes = furnitureSelect.querySelectorAll('.select-dropdown input');
+
+
+
+      function updateSelectedText(trigger, checkboxes) {
+        let selected = Array.from(checkboxes)
+          .filter(checkbox => checkbox.checked)
+          .map(checkbox => checkbox.value);
+
+        trigger.textContent = selected.length ? selected.join(', ') : 'Выберите';
+      }
+
+      materialCheckboxes.forEach(checkbox => checkbox.addEventListener('change', () => updateSelectedText(materialTrigger, materialCheckboxes)));
+      furnitureCheckboxes.forEach(checkbox => checkbox.addEventListener('change', () => updateSelectedText(furnitureTrigger, furnitureCheckboxes)));
+
+      function setupDropdown(selectElement, trigger) {
+        trigger.addEventListener('click', function () {
+          selectElement.classList.toggle('open');
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!selectElement.contains(e.target)) {
+            selectElement.classList.remove('open');
+          }
+        });
+      }
+
+      setupDropdown(materialSelect, materialTrigger);
+      setupDropdown(furnitureSelect, furnitureTrigger);
+    });
+
+    document.querySelectorAll('.openPopup').forEach(button => {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('popupOverlay').style.display = 'flex';
+      });
+    });
+    document.getElementById('closePopup').addEventListener('click', function () {
+      document.getElementById('popupOverlay').style.display = 'none';
+    });
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      alert('Форма отправлена!');
+      document.getElementById('popupOverlay').style.display = 'none';
+    });
+    document.querySelector('.file-upload input').addEventListener('change', function () {
+      let fileName = this.files[0] ? this.files[0].name : "+";
+      document.querySelector('.file-name').textContent = fileName;
+    });
+
+
+
+
+    const pickr = Pickr.create({
+      el: '.color-picker',
+      theme: 'nano', // or 'monolith', or 'nano'
+
+      swatches: [
+        'rgba(244, 67, 54, 1)',
+        'rgba(233, 30, 99, 0.95)',
+        'rgba(156, 39, 176, 0.9)',
+        'rgba(103, 58, 183, 0.85)',
+        'rgba(63, 81, 181, 0.8)',
+        'rgba(33, 150, 243, 0.75)',
+        'rgba(3, 169, 244, 0.7)',
+        'rgba(0, 188, 212, 0.7)',
+        'rgba(0, 150, 136, 0.75)',
+        'rgba(76, 175, 80, 0.8)',
+        'rgba(139, 195, 74, 0.85)',
+        'rgba(205, 220, 57, 0.9)',
+        'rgba(255, 235, 59, 0.95)',
+        'rgba(255, 193, 7, 1)'
+      ],
+
+      components: {
+
+        // Main components
+        preview: true,
+        opacity: true,
+        hue: true,
+
+        // Input / output Options
+        interaction: {
+          hex: false,
+          rgba: false,
+          hsla: false,
+          hsva: false,
+          cmyk: false,
+          input: true,
+          clear: false,
+          save: true
+        }
+      },
+
+      i18n: {
+
+        'btn:save': 'Ok',
+
+      }
+    });
+
+    pickr.on('save', (color, instance) => {
+      instance.hide();
+    });
+
+    pickr.on('init', instance => {
+      document.querySelector('.pcr-app').style.width = '300px';
+    });
+
+    // document.querySelectorAll('.custom-select').forEach(select => {
+    //   select.addEventListener('click', function () {
+    //     this.classList.toggle('open');
+    //   });
+    // });
+
+    function showSection(sectionId) {
+      // Скрываем все секции
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Показываем нужную секцию
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Устанавливаем начальную секцию (по умолчанию)
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('hallway'); // Можно поменять на любую другую секцию
+    });
+
+    function showSectionLi(sectionId) {
+      // Скрываем все секции
+      document.querySelectorAll('.linkSecSection').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Показываем нужную секцию
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Устанавливаем начальную секцию (по умолчанию)
+    document.addEventListener('DOMContentLoaded', () => {
+      showSectionLi('hallway_li'); // Можно поменять на любую другую секцию
+    });
+
+    function showSectionA(sectionId) {
+      // Скрываем все секции
+      document.querySelectorAll('.linkSecSectionA').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Показываем нужную секцию
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Устанавливаем начальную секцию (по умолчанию)
+    document.addEventListener('DOMContentLoaded', () => {
+      showSectionA('hallway_a'); // Можно поменять на любую другую секцию
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/any.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
