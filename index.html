@@ -105,6 +105,21 @@
   </header>
 
   <header id="services">
+    <div id="overlay"></div>
+    <div id="modal">
+      <button class="close-button" onclick="closeModal()">&times;</button>
+      <span style="display: block; text-align: left; padding-left: 7rem;    padding-top: 5rem;">Команда <b>NEXTROOM</b>
+        рада приветствовать
+        вас!</span><br>
+      <span style="display: block; text-align: left; padding-left: 7rem;     padding-right: 10rem;">Мы предлагаем <span
+          style="font-weight: 700;">выезд дизайнера</span> к вам домой за <span style="font-weight: 700;">наш
+          счет</span>. Специалист выполнит замеры, представит возможные решения
+        для вашего интерьера и предложит идеи по эффективному использованию пространства.</span><br>
+      <span
+        style="display: block; text-align: left; padding-left: 7rem; padding-right: 10rem; padding-bottom: 5rem;">Если
+        вы хотите обсудить детали и согласовать
+        удобное время встречи, просто <span style="font-weight: 700;">оставьте заявку.</span></span>
+    </div>
     <div class="burger-menu">
       <div class="burger-icon">
         <span></span>
@@ -135,6 +150,11 @@
         <li id="cabinets_li" class="for_border linkSecSection" onclick="showSectionLi('cabinets_li');"><a
             id="cabinets_a" class="linkSecSectionA"
             onclick="showSection('cabinets'); showSectionA('cabinets_a');">Шкафы</a></li>
+        <li id="wardrobe_li" class="for_border linkSecSection" onclick="showSectionLi('wardrobe_li');"><a
+            id="wardrobe_a" class="linkSecSectionA"
+            onclick="showSection('wardrobe'); showSectionA('wardrobe_a');">Гардеробы</a></li>
+        <li id="laundry_li" class="for_border linkSecSection" onclick="showSectionLi('laundry_li');"><a id="laundry_a"
+            class="linkSecSectionA" onclick="showSection('laundry'); showSectionA('laundry_a');">Постирочные</a></li>
       </ul>
       <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -160,21 +180,7 @@
   </header>
 
   <div class="sections-container">
-    <div id="overlay"></div>
-    <div id="modal">
-      <button class="close-button" onclick="closeModal()">&times;</button>
-      <span style="display: block; text-align: left; padding-left: 7rem;    padding-top: 5rem;">Команда <b>NEXTROOM</b>
-        рада приветствовать
-        вас!</span><br>
-      <span style="display: block; text-align: left; padding-left: 7rem;     padding-right: 10rem;">Мы предлагаем <span
-          style="font-weight: 700;">выезд дизайнера</span> к вам домой за <span style="font-weight: 700;">наш
-          счет</span>. Специалист выполнит замеры, представит возможные решения
-        для вашего интерьера и предложит идеи по эффективному использованию пространства.</span><br>
-      <span
-        style="display: block; text-align: left; padding-left: 7rem; padding-right: 10rem; padding-bottom: 5rem;">Если
-        вы хотите обсудить детали и согласовать
-        удобное время встречи, просто <span style="font-weight: 700;">оставьте заявку.</span></span>
-    </div>
+
     <div class="background_services_left sec_next_page"></div>
     <div class="background_services_right sec_r_next_page"></div>
     <section id="hallway" class="content-section">
@@ -202,10 +208,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/hallway-1_2.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/hallway-2_2.jpg" alt="">
+                    <img src="content/img/hallway-3_2.jpg" alt="">
                     <span class="dots" id="dots2"><a>. . .</a></span>
                   </div>
                 </div>
@@ -230,7 +236,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -243,7 +249,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -295,7 +301,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -308,7 +314,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -363,7 +369,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -376,7 +382,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -428,7 +434,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -441,7 +447,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -464,7 +470,7 @@
           <div><img src="content/img/hallway-3.jpg" alt="Slider Image"></div>
           <div><img src="content/img/hallway-4.jpg" alt="Slider Image"></div>
           <div>
-            <video controls style=" height: 60rem; width: 60rem;">
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
               <source src="content/img/hallway-5.MP4" type="video/mp4">
             </video>
           </div>
@@ -474,9 +480,14 @@
       <div class="slider-overlay2" id="sliderOverlay2">
         <div class="slider2" id="imageSlider2">
           <span class="close-btn2" id="closeSlider2">×</span>
-          <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
-          <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
-          <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/hallway-1_2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/hallway-2_2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/hallway-3_2.jpg" alt="Slider Image"></div>
+          <div>
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
+              <source src="content/img/hallway-4_2.MP4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
 
@@ -489,14 +500,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay4" id="sliderOverlay4">
+      <!-- <div class="slider-overlay4" id="sliderOverlay4">
         <div class="slider4" id="imageSlider4">
           <span class="close-btn4" id="closeSlider4">×</span>
           <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay5" id="sliderOverlay5">
         <div class="slider5" id="imageSlider5">
@@ -525,14 +536,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay8" id="sliderOverlay8">
+      <!-- <div class="slider-overlay8" id="sliderOverlay8">
         <div class="slider8" id="imageSlider8">
           <span class="close-btn8" id="closeSlider8">×</span>
           <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay1_2" id="sliderOverlay1_2">
@@ -562,14 +573,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay4_2" id="sliderOverlay4_2">
+      <!-- <div class="slider-overlay4_2" id="sliderOverlay4_2">
         <div class="slider4_2" id="imageSlider4_2">
           <span class="close-btn4_2" id="closeSlider4_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay5_2" id="sliderOverlay5_2">
         <div class="slider5_2" id="imageSlider5_2">
@@ -597,7 +608,7 @@
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
       </div>
-
+      <!-- 
       <div class="slider-overlay8_2" id="sliderOverlay8_2">
         <div class="slider8_2" id="imageSlider8_2">
           <span class="close-btn8_2" id="closeSlider8_2">×</span>
@@ -605,7 +616,7 @@
           <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -783,10 +794,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/living-room-1_2.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/living-room-2_2.jpg" alt="">
+                    <img src="content/img/living-room-3_2.jpg" alt="">
                     <span class="dots" id="dots10"><a>. . .</a></span>
                   </div>
                 </div>
@@ -811,7 +822,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -824,7 +835,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -876,7 +887,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -889,7 +900,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -944,7 +955,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -957,7 +968,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -1009,7 +1020,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -1022,7 +1033,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -1044,7 +1055,7 @@
           <div><img src="content/img/living-room-2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/living-room-4.jpg" alt="Slider Image"></div>
           <div>
-            <video controls style="height: 60rem; width: 60rem;">
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
               <source src="content/img/living-room-3.MP4" type="video/mp4">
             </video>
           </div>
@@ -1054,9 +1065,14 @@
       <div class="slider-overlay10" id="sliderOverlay10">
         <div class="slider10" id="imageSlider10">
           <span class="close-btn10" id="closeSlider10">×</span>
-          <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
-          <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
-          <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/living-room-1_2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/living-room-2_2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/living-room-3_2.jpg" alt="Slider Image"></div>
+          <div>
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
+              <source src="content/img/living-room-4_2_new.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
 
@@ -1069,14 +1085,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay12" id="sliderOverlay12">
+      <!-- <div class="slider-overlay12" id="sliderOverlay12">
         <div class="slider12" id="imageSlider12">
           <span class="close-btn12" id="closeSlider12">×</span>
           <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay13" id="sliderOverlay13">
         <div class="slider13" id="imageSlider13">
@@ -1105,14 +1121,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay16" id="sliderOverlay16">
+      <!-- <div class="slider-overlay16" id="sliderOverlay16">
         <div class="slider16" id="imageSlider16">
           <span class="close-btn16" id="closeSlider16">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay9_2" id="sliderOverlay9_2">
@@ -1142,14 +1158,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay12_2" id="sliderOverlay12_2">
+      <!-- <div class="slider-overlay12_2" id="sliderOverlay12_2">
         <div class="slider12_2" id="imageSlider12_2">
           <span class="close-btn12_2" id="closeSlider12_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/2.jpg" alt="Slider Image"></div>
           <div><img src="content/img/old/3.jpg" alt="Slider Image"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay13_2" id="sliderOverlay13_2">
         <div class="slider13_2" id="imageSlider13_2">
@@ -1178,14 +1194,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay16_2" id="sliderOverlay16_2">
+      <!-- <div class="slider-overlay16_2" id="sliderOverlay16_2">
         <div class="slider16_2" id="imageSlider16_2">
           <span class="close-btn16_2" id="closeSlider16_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -1363,10 +1379,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/kitchens-1_2.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/kitchens-2_2.jpg" alt="">
+                    <img src="content/img/kitchens-3_2.jpg" alt="">
                     <span class="dots" id="dots18"><a>. . .</a></span>
                   </div>
                 </div>
@@ -1378,10 +1394,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/kitchens-1_3.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/kitchens-2_3.jpg" alt="">
+                    <img src="content/img/kitchens-3_3.jpg" alt="">
                     <span class="dots" id="dots19"><a>. . .</a></span>
                   </div>
                 </div>
@@ -1391,7 +1407,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -1404,7 +1420,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -1456,7 +1472,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -1469,7 +1485,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -1524,7 +1540,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -1537,7 +1553,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -1589,7 +1605,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -1602,7 +1618,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -1634,29 +1650,39 @@
       <div class="slider-overlay18" id="sliderOverlay18">
         <div class="slider18" id="imageSlider18">
           <span class="close-btn18" id="closeSlider18">×</span>
-          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/kitchens-1_2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/kitchens-2_2.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/kitchens-3_2.jpg" alt="Slider Image"></div>
+          <div>
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
+              <source src="content/img/kitchens-4_2_new.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
 
       <div class="slider-overlay19" id="sliderOverlay19">
         <div class="slider19" id="imageSlider19">
           <span class="close-btn19" id="closeSlider19">×</span>
-          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/kitchens-1_3.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/kitchens-2_3.jpg" alt="Slider Image"></div>
+          <div><img src="content/img/kitchens-3_3.jpg" alt="Slider Image"></div>
+          <div>
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
+              <source src="content/img/kitchens-5_3.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
 
-      <div class="slider-overlay20" id="sliderOverlay20">
+      <!-- <div class="slider-overlay20" id="sliderOverlay20">
         <div class="slider20" id="imageSlider20">
           <span class="close-btn20" id="closeSlider20">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay21" id="sliderOverlay21">
         <div class="slider21" id="imageSlider21">
@@ -1685,14 +1711,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay24" id="sliderOverlay24">
+      <!-- <div class="slider-overlay24" id="sliderOverlay24">
         <div class="slider24" id="imageSlider24">
           <span class="close-btn24" id="closeSlider24">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay17_2" id="sliderOverlay17_2">
@@ -1722,14 +1748,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay20_2" id="sliderOverlay20_2">
+      <!-- <div class="slider-overlay20_2" id="sliderOverlay20_2">
         <div class="slider20_2" id="imageSlider20_2">
           <span class="close-btn20_2" id="closeSlider20_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay21_2" id="sliderOverlay21_2">
         <div class="slider21_2" id="imageSlider21_2">
@@ -1758,14 +1784,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay24_2" id="sliderOverlay24_2">
+      <!-- <div class="slider-overlay24_2" id="sliderOverlay24_2">
         <div class="slider24_2" id="imageSlider24_2">
           <span class="close-btn24_2" id="closeSlider24_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -1971,7 +1997,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -1984,7 +2010,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -2036,7 +2062,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2049,7 +2075,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -2104,7 +2130,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2117,7 +2143,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -2169,7 +2195,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2182,7 +2208,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -2224,14 +2250,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay30" id="sliderOverlay30">
+      <!-- <div class="slider-overlay30" id="sliderOverlay30">
         <div class="slider30" id="imageSlider30">
           <span class="close-btn30" id="closeSlider30">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay27" id="sliderOverlay27">
         <div class="slider27" id="imageSlider27">
@@ -2260,14 +2286,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay32" id="sliderOverlay32">
+      <!-- <div class="slider-overlay32" id="sliderOverlay32">
         <div class="slider32" id="imageSlider32">
           <span class="close-btn32" id="closeSlider32">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay25_2" id="sliderOverlay25_2">
@@ -2297,14 +2323,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay30_2" id="sliderOverlay30_2">
+      <!-- <div class="slider-overlay30_2" id="sliderOverlay30_2">
         <div class="slider30_2" id="imageSlider30_2">
           <span class="close-btn30_2" id="closeSlider30_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay27_2" id="sliderOverlay27_2">
         <div class="slider27_2" id="imageSlider27_2">
@@ -2333,14 +2359,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay32_2" id="sliderOverlay32_2">
+      <!-- <div class="slider-overlay32_2" id="sliderOverlay32_2">
         <div class="slider32_2" id="imageSlider32_2">
           <span class="close-btn32_2" id="closeSlider32_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -2504,10 +2530,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/bathrooms-1_2.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/bathrooms-2_2.jpg" alt="">
+                    <img src="content/img/bathrooms-3_2.jpg" alt="">
                     <span class="dots" id="dots34"><a>. . .</a></span>
                   </div>
                 </div>
@@ -2532,7 +2558,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2545,7 +2571,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -2597,7 +2623,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2610,7 +2636,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -2665,7 +2691,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2678,7 +2704,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -2702,10 +2728,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/bathrooms-1_2.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/bathrooms-2_2.jpg" alt="">
+                    <img src="content/img/bathrooms-3_2.jpg" alt="">
                     <span class="dots" id="dots36_2"><a>. . .</a></span>
                   </div>
                 </div>
@@ -2730,7 +2756,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -2743,7 +2769,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -2775,9 +2801,14 @@
       <div class="slider-overlay34" id="sliderOverlay34">
         <div class="slider34" id="imageSlider34">
           <span class="close-btn34" id="closeSlider34">×</span>
-          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/bathrooms-1_2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/bathrooms-2_2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/bathrooms-3_2.jpg" alt="Изображение слайдера"></div>
+          <div>
+            <video controls style="height: 60rem;width: 60rem;">
+              <source src="content/img/bathrooms-4_2.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
 
@@ -2790,14 +2821,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay38" id="sliderOverlay38">
+      <!-- <div class="slider-overlay38" id="sliderOverlay38">
         <div class="slider38" id="imageSlider38">
           <span class="close-btn38" id="closeSlider38">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay35" id="sliderOverlay35">
         <div class="slider35" id="imageSlider35">
@@ -2826,14 +2857,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay40" id="sliderOverlay40">
+      <!-- <div class="slider-overlay40" id="sliderOverlay40">
         <div class="slider40" id="imageSlider40">
           <span class="close-btn40" id="closeSlider40">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay33_2" id="sliderOverlay33_2">
@@ -2863,14 +2894,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay38_2" id="sliderOverlay38_2">
+      <!-- <div class="slider-overlay38_2" id="sliderOverlay38_2">
         <div class="slider38_2" id="imageSlider38_2">
           <span class="close-btn38_2" id="closeSlider38_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay35_2" id="sliderOverlay35_2">
         <div class="slider35_2" id="imageSlider35_2">
@@ -2899,14 +2930,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay40_2" id="sliderOverlay40_2">
+      <!-- <div class="slider-overlay40_2" id="sliderOverlay40_2">
         <div class="slider40_2" id="imageSlider40_2">
           <span class="close-btn40_2" id="closeSlider40_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -3084,10 +3115,10 @@
 
               <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
-                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <img style="margin-right: 1rem;" src="content/img/children-1_2.jpg" alt="">
                   <div class="another secpage">
-                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
-                    <img src="content/img/old/14.png" alt="">
+                    <img style="margin-bottom: 1rem;" src="content/img/children-2_2.jpg" alt="">
+                    <img src="content/img/children-3_2.jpg" alt="">
                     <span class="dots" id="dots42"><a>. . .</a></span>
                   </div>
                 </div>
@@ -3112,7 +3143,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3125,7 +3156,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -3177,7 +3208,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3190,7 +3221,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -3245,7 +3276,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3258,7 +3289,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -3310,7 +3341,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3323,7 +3354,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -3346,7 +3377,7 @@
           <div><img src="content/img/children-3.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/children-4.jpg" alt="Изображение слайдера"></div>
           <div>
-            <video controls video controls style="height: 60rem; width: 60rem;">
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
               <source src="content/img/children-5.mp4" type="video/mp4">
             </video>
           </div>
@@ -3356,9 +3387,14 @@
       <div class="slider-overlay42" id="sliderOverlay42">
         <div class="slider42" id="imageSlider42">
           <span class="close-btn42" id="closeSlider42">×</span>
-          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
-          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/children-1_2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/children-2_2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/children-3_2.jpg" alt="Изображение слайдера"></div>
+          <div>
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
+              <source src="content/img/children-4_2.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
 
@@ -3371,14 +3407,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay46" id="sliderOverlay46">
+      <!-- <div class="slider-overlay46" id="sliderOverlay46">
         <div class="slider46" id="imageSlider46">
           <span class="close-btn46" id="closeSlider46">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay43" id="sliderOverlay43">
         <div class="slider43" id="imageSlider43">
@@ -3407,14 +3443,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay48" id="sliderOverlay48">
+      <!-- <div class="slider-overlay48" id="sliderOverlay48">
         <div class="slider48" id="imageSlider48">
           <span class="close-btn48" id="closeSlider48">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay41_2" id="sliderOverlay41_2">
@@ -3444,14 +3480,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay46_2" id="sliderOverlay46_2">
+      <!-- <div class="slider-overlay46_2" id="sliderOverlay46_2">
         <div class="slider46_2" id="imageSlider46_2">
           <span class="close-btn46_2" id="closeSlider46_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay43_2" id="sliderOverlay43_2">
         <div class="slider43_2" id="imageSlider43_2">
@@ -3480,14 +3516,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay48_2" id="sliderOverlay48_2">
+      <!-- <div class="slider-overlay48_2" id="sliderOverlay48_2">
         <div class="slider48_2" id="imageSlider48_2">
           <span class="close-btn48_2" id="closeSlider48_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -3691,7 +3727,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3704,7 +3740,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -3756,7 +3792,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3769,7 +3805,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -3824,7 +3860,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3837,7 +3873,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -3889,7 +3925,7 @@
                 </div>
               </div>
 
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -3902,7 +3938,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -3924,7 +3960,7 @@
           <div><img src="content/img/bedrooms-2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/bedrooms-3.jpg" alt="Изображение слайдера"></div>
           <div>
-            <video controls style="height: 60rem; width: 60rem;">
+            <video controls video controls style="height: 60rem; width: 57rem; position: relative; top: -20px;">
               <source src="content/img/bedrooms-4.mp4" type="video/mp4">
             </video>
           </div>
@@ -3949,14 +3985,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay54" id="sliderOverlay54">
+      <!-- <div class="slider-overlay54" id="sliderOverlay54">
         <div class="slider54" id="imageSlider54">
           <span class="close-btn54" id="closeSlider54">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay51" id="sliderOverlay51">
         <div class="slider51" id="imageSlider51">
@@ -3985,14 +4021,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay56" id="sliderOverlay56">
+      <!-- <div class="slider-overlay56" id="sliderOverlay56">
         <div class="slider56" id="imageSlider56">
           <span class="close-btn56" id="closeSlider56">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay49_2" id="sliderOverlay49_2">
@@ -4022,14 +4058,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay54_2" id="sliderOverlay54_2">
+      <!-- <div class="slider-overlay54_2" id="sliderOverlay54_2">
         <div class="slider54_2" id="imageSlider54_2">
           <span class="close-btn54_2" id="closeSlider54_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <div class="slider-overlay51_2" id="sliderOverlay51_2">
         <div class="slider51_2" id="imageSlider51_2">
@@ -4058,14 +4094,14 @@
         </div>
       </div>
 
-      <div class="slider-overlay56_2" id="sliderOverlay56_2">
+      <!-- <div class="slider-overlay56_2" id="sliderOverlay56_2">
         <div class="slider56_2" id="imageSlider56_2">
           <span class="close-btn56_2" id="closeSlider56_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили -->
       <style>
@@ -4267,7 +4303,7 @@
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
               </div>
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -4280,7 +4316,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -4330,7 +4366,7 @@
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
               </div>
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -4343,7 +4379,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -4396,7 +4432,7 @@
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
               </div>
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -4409,7 +4445,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
 
@@ -4459,7 +4495,7 @@
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
               </div>
-              <div class="content_approach content_approach_spaces">
+              <!-- <div class="content_approach content_approach_spaces">
                 <div class="img_approach_secpage img_approach_secpage_spaces">
                   <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
                   <div class="another secpage">
@@ -4472,7 +4508,7 @@
                   <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
                   <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
                 </div>
-              </div>
+              </div> -->
             </div>
           </section>
         </div>
@@ -4508,13 +4544,13 @@
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
       </div>
-      <div class="slider-overlay62" id="sliderOverlay62">
+      <!-- <div class="slider-overlay62" id="sliderOverlay62">
         <div class="slider62" id="imageSlider62"><span class="close-btn62" id="closeSlider62">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
       <div class="slider-overlay59" id="sliderOverlay59">
         <div class="slider59" id="imageSlider59"><span class="close-btn59" id="closeSlider59">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
@@ -4536,13 +4572,13 @@
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
       </div>
-      <div class="slider-overlay64" id="sliderOverlay64">
+      <!-- <div class="slider-overlay64" id="sliderOverlay64">
         <div class="slider64" id="imageSlider64"><span class="close-btn64" id="closeSlider64">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Слайдеры для второй страницы -->
       <div class="slider-overlay57_2" id="sliderOverlay57_2">
@@ -4566,13 +4602,13 @@
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
       </div>
-      <div class="slider-overlay62_2" id="sliderOverlay62_2">
+      <!-- <div class="slider-overlay62_2" id="sliderOverlay62_2">
         <div class="slider62_2" id="imageSlider62_2"><span class="close-btn62_2" id="closeSlider62_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
       <div class="slider-overlay59_2" id="sliderOverlay59_2">
         <div class="slider59_2" id="imageSlider59_2"><span class="close-btn59_2" id="closeSlider59_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
@@ -4594,13 +4630,13 @@
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
       </div>
-      <div class="slider-overlay64_2" id="sliderOverlay64_2">
+      <!-- <div class="slider-overlay64_2" id="sliderOverlay64_2">
         <div class="slider64_2" id="imageSlider64_2"><span class="close-btn64_2" id="closeSlider64_2">×</span>
           <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
           <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Стили для анимации и номеров страниц -->
       <style>
@@ -4734,6 +4770,876 @@
           addSliderHandlers('dots60_2', 'sliderOverlay60_2', 'closeSlider60_2', 'imageSlider60_2');
           addSliderHandlers('dots63_2', 'sliderOverlay63_2', 'closeSlider63_2', 'imageSlider63_2');
           addSliderHandlers('dots64_2', 'sliderOverlay64_2', 'closeSlider64_2', 'imageSlider64_2');
+        });
+      </script>
+    </section>
+    <section id="wardrobe" class="content-section">
+      <!-- Контейнер страниц -->
+      <div class="pages-container">
+        <!-- Первая страница -->
+        <div id="page1" class="page-content">
+          <!-- Секция 1 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots65"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots66"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots67"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Секция 2 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots68"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots69"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots70"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Вторая страница -->
+        <div id="page2" class="page-content" style="display: none;">
+          <!-- Секция 1_2 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots71"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots72"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots73"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Секция 2_2 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots74"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots75"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots76"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Навигация между страницами (внизу) -->
+      <div class="page-navigation" style="text-align: center; margin: 20px 0;">
+        <button id="page1Btn" style="padding: 10px 20px; margin: 0 10px; font-size: 1.5rem;">←</button>
+        <span id="pageNum1" class="page-number active" style="margin: 0 5px; font-size: 1.2rem;">1</span>
+        <span id="pageNum2" class="page-number" style="margin: 0 5px; font-size: 1.2rem;">2</span>
+        <button id="page2Btn" style="padding: 10px 20px; margin: 0 10px; font-size: 1.5rem;">→</button>
+      </div>
+
+      <!-- Слайдеры для первой страницы -->
+      <div class="slider-overlay65" id="sliderOverlay65">
+        <div class="slider65" id="imageSlider65"><span class="close-btn65" id="closeSlider65">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay66" id="sliderOverlay66">
+        <div class="slider66" id="imageSlider66"><span class="close-btn66" id="closeSlider66">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay67" id="sliderOverlay67">
+        <div class="slider67" id="imageSlider67"><span class="close-btn67" id="closeSlider67">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay68" id="sliderOverlay68">
+        <div class="slider68" id="imageSlider68"><span class="close-btn68" id="closeSlider68">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay69" id="sliderOverlay69">
+        <div class="slider69" id="imageSlider69"><span class="close-btn69" id="closeSlider69">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay70" id="sliderOverlay70">
+        <div class="slider70" id="imageSlider70"><span class="close-btn70" id="closeSlider70">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+
+      <!-- Слайдеры для второй страницы -->
+      <div class="slider-overlay71" id="sliderOverlay71">
+        <div class="slider71" id="imageSlider71"><span class="close-btn71" id="closeSlider71">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay72" id="sliderOverlay72">
+        <div class="slider72" id="imageSlider72"><span class="close-btn72" id="closeSlider72">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay73" id="sliderOverlay73">
+        <div class="slider73" id="imageSlider73"><span class="close-btn73" id="closeSlider73">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay74" id="sliderOverlay74">
+        <div class="slider74" id="imageSlider74"><span class="close-btn74" id="closeSlider74">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay75" id="sliderOverlay75">
+        <div class="slider75" id="imageSlider75"><span class="close-btn75" id="closeSlider75">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay76" id="sliderOverlay76">
+        <div class="slider76" id="imageSlider76"><span class="close-btn76" id="closeSlider76">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+
+      <!-- Стили для анимации и номеров страниц -->
+      <style>
+        .pages-container {
+          position: relative;
+        }
+
+        .page-content {
+          transition: opacity 0.5s ease-in-out;
+          opacity: 1;
+        }
+
+        .page-content.hidden {
+          opacity: 0;
+          display: none;
+        }
+
+        .page-navigation {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .page-navigation button {
+          background: none;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .page-navigation button:hover {
+          background: #f0f0f0;
+        }
+
+        .page-number {
+          color: #888;
+          cursor: default;
+        }
+
+        .page-number.active {
+          color: #000;
+          font-weight: bold;
+        }
+
+        #wardrobe {
+          position: relative;
+          z-index: 1;
+        }
+      </style>
+
+      <!-- Скрипты -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Установка начального состояния
+          $('#page1').show().removeClass('hidden');
+          $('#page2').hide().addClass('hidden');
+
+          // Инициализация всех слайдеров
+          $('.slider65, .slider66, .slider67, .slider68, .slider69, .slider70, ' +
+            '.slider71, .slider72, .slider73, .slider74, .slider75, .slider76').slick({
+              dots: true,
+              infinite: true,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            });
+
+          // Переключение страниц
+          $('#page1Btn').click(function () {
+            console.log('Page 1 button clicked');
+            if (!$('#page1').is(':visible')) {
+              $('#page2').addClass('hidden');
+              setTimeout(function () {
+                $('#page2').hide();
+                $('#page1').show();
+                setTimeout(function () {
+                  $('#page1').removeClass('hidden');
+                  $('#pageNum1').addClass('active');
+                  $('#pageNum2').removeClass('active');
+                  $('#page1 .slider65, #page1 .slider66, #page1 .slider67, ' +
+                    '#page1 .slider68, #page1 .slider69, #page1 .slider70').slick('setPosition');
+                }, 50);
+              }, 50);
+            }
+          });
+
+          $('#page2Btn').click(function () {
+            console.log('Page 2 button clicked');
+            if (!$('#page2').is(':visible')) {
+              $('#page1').addClass('hidden');
+              setTimeout(function () {
+                $('#page1').hide();
+                $('#page2').show();
+                setTimeout(function () {
+                  $('#page2').removeClass('hidden');
+                  $('#pageNum2').addClass('active');
+                  $('#pageNum1').removeClass('active');
+                  $('#page2 .slider71, #page2 .slider72, #page2 .slider73, ' +
+                    '#page2 .slider74, #page2 .slider75, #page2 .slider76').slick('setPosition');
+                }, 50);
+              }, 50);
+            }
+          });
+
+          // Обработчики событий для слайдеров
+          function addSliderHandlers(dotsId, overlayId, closeId, sliderId) {
+            $('#' + dotsId).click(function () {
+              $('#' + overlayId).css('display', 'flex');
+              setTimeout(function () { $('#' + sliderId).slick('setPosition'); }, 100);
+            });
+            $('#' + closeId).click(function () { $('#' + overlayId).hide(); });
+            $('#' + overlayId).click(function (e) { if (e.target === this) $(this).hide(); });
+          }
+
+          // Первая страница
+          addSliderHandlers('dots65', 'sliderOverlay65', 'closeSlider65', 'imageSlider65');
+          addSliderHandlers('dots66', 'sliderOverlay66', 'closeSlider66', 'imageSlider66');
+          addSliderHandlers('dots67', 'sliderOverlay67', 'closeSlider67', 'imageSlider67');
+          addSliderHandlers('dots68', 'sliderOverlay68', 'closeSlider68', 'imageSlider68');
+          addSliderHandlers('dots69', 'sliderOverlay69', 'closeSlider69', 'imageSlider69');
+          addSliderHandlers('dots70', 'sliderOverlay70', 'closeSlider70', 'imageSlider70');
+
+          // Вторая страница
+          addSliderHandlers('dots71', 'sliderOverlay71', 'closeSlider71', 'imageSlider71');
+          addSliderHandlers('dots72', 'sliderOverlay72', 'closeSlider72', 'imageSlider72');
+          addSliderHandlers('dots73', 'sliderOverlay73', 'closeSlider73', 'imageSlider73');
+          addSliderHandlers('dots74', 'sliderOverlay74', 'closeSlider74', 'imageSlider74');
+          addSliderHandlers('dots75', 'sliderOverlay75', 'closeSlider75', 'imageSlider75');
+          addSliderHandlers('dots76', 'sliderOverlay76', 'closeSlider76', 'imageSlider76');
+        });
+      </script>
+    </section>
+    <section id="laundry" class="content-section">
+      <!-- Контейнер страниц -->
+      <div class="pages-container">
+        <!-- Первая страница -->
+        <div id="page1" class="page-content">
+          <!-- Секция 1 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots77"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots78"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots79"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Секция 2 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots80"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots81"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots82"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Вторая страница -->
+        <div id="page2" class="page-content" style="display: none;">
+          <!-- Секция 1_2 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots83"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots84"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots85"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Секция 2_2 -->
+          <section class="approach section-page" style="height: 100%;">
+            <div class="container item_catalog"
+              style="display: flex; flex-direction: row; justify-content: space-around;">
+              <div style="margin-right: 15rem;" class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots86"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots87"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+              <div class="content_approach content_approach_spaces">
+                <div class="img_approach_secpage img_approach_secpage_spaces">
+                  <img style="margin-right: 1rem;" src="content/img/old/12.png" alt="">
+                  <div class="another secpage">
+                    <img style="margin-bottom: 1rem;" src="content/img/old/13.png" alt="">
+                    <img src="content/img/old/14.png" alt="">
+                    <span class="dots" id="dots88"><a>. . .</a></span>
+                  </div>
+                </div>
+                <div class="price">
+                  <span style="font-size: 2rem;">от 10.000 тыс. руб</span>
+                  <span style="font-size: 1.5rem; opacity: 0.5; margin-top: 1rem;">Описание...</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Навигация между страницами (внизу) -->
+      <div class="page-navigation" style="text-align: center; margin: 20px 0;">
+        <button id="page1Btn" style="padding: 10px 20px; margin: 0 10px; font-size: 1.5rem;">←</button>
+        <span id="pageNum1" class="page-number active" style="margin: 0 5px; font-size: 1.2rem;">1</span>
+        <span id="pageNum2" class="page-number" style="margin: 0 5px; font-size: 1.2rem;">2</span>
+        <button id="page2Btn" style="padding: 10px 20px; margin: 0 10px; font-size: 1.5rem;">→</button>
+      </div>
+
+      <!-- Слайдеры для первой страницы -->
+      <div class="slider-overlay77" id="sliderOverlay77">
+        <div class="slider77" id="imageSlider77"><span class="close-btn77" id="closeSlider77">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay78" id="sliderOverlay78">
+        <div class="slider78" id="imageSlider78"><span class="close-btn78" id="closeSlider78">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay79" id="sliderOverlay79">
+        <div class="slider79" id="imageSlider79"><span class="close-btn79" id="closeSlider79">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay80" id="sliderOverlay80">
+        <div class="slider80" id="imageSlider80"><span class="close-btn80" id="closeSlider80">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay81" id="sliderOverlay81">
+        <div class="slider81" id="imageSlider81"><span class="close-btn81" id="closeSlider81">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay82" id="sliderOverlay82">
+        <div class="slider82" id="imageSlider82"><span class="close-btn82" id="closeSlider82">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+
+      <!-- Слайдеры для второй страницы -->
+      <div class="slider-overlay83" id="sliderOverlay83">
+        <div class="slider83" id="imageSlider83"><span class="close-btn83" id="closeSlider83">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay84" id="sliderOverlay84">
+        <div class="slider84" id="imageSlider84"><span class="close-btn84" id="closeSlider84">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay85" id="sliderOverlay85">
+        <div class="slider85" id="imageSlider85"><span class="close-btn85" id="closeSlider85">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay86" id="sliderOverlay86">
+        <div class="slider86" id="imageSlider86"><span class="close-btn86" id="closeSlider86">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay87" id="sliderOverlay87">
+        <div class="slider87" id="imageSlider87"><span class="close-btn87" id="closeSlider87">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+      <div class="slider-overlay88" id="sliderOverlay88">
+        <div class="slider88" id="imageSlider88"><span class="close-btn88" id="closeSlider88">×</span>
+          <div><img src="content/img/old/1.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/2.jpg" alt="Изображение слайдера"></div>
+          <div><img src="content/img/old/3.jpg" alt="Изображение слайдера"></div>
+        </div>
+      </div>
+
+      <!-- Стили для анимации и номеров страниц -->
+      <style>
+        .pages-container {
+          position: relative;
+        }
+
+        .page-content {
+          transition: opacity 0.5s ease-in-out;
+          opacity: 1;
+        }
+
+        .page-content.hidden {
+          opacity: 0;
+          display: none;
+        }
+
+        .page-navigation {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .page-navigation button {
+          background: none;
+          border: 1px solid #ccc;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .page-navigation button:hover {
+          background: #f0f0f0;
+        }
+
+        .page-number {
+          color: #888;
+          cursor: default;
+        }
+
+        .page-number.active {
+          color: #000;
+          font-weight: bold;
+        }
+
+        #laundry {
+          position: relative;
+          z-index: 1;
+        }
+      </style>
+
+      <!-- Скрипты -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          // Установка начального состояния
+          $('#page1').show().removeClass('hidden');
+          $('#page2').hide().addClass('hidden');
+
+          // Инициализация всех слайдеров
+          $('.slider77, .slider78, .slider79, .slider80, .slider81, .slider82, ' +
+            '.slider83, .slider84, .slider85, .slider86, .slider87, .slider88').slick({
+              dots: true,
+              infinite: true,
+              speed: 500,
+              slidesToShow: 1,
+              slidesToScroll: 1
+            });
+
+          // Переключение страниц
+          $('#page1Btn').click(function () {
+            if (!$('#page1').is(':visible')) {
+              $('#page2').addClass('hidden');
+              setTimeout(function () {
+                $('#page2').hide();
+                $('#page1').show();
+                setTimeout(function () {
+                  $('#page1').removeClass('hidden');
+                  $('#pageNum1').addClass('active');
+                  $('#pageNum2').removeClass('active');
+                  $('#page1 .slider77, #page1 .slider78, #page1 .slider79, ' +
+                    '#page1 .slider80, #page1 .slider81, #page1 .slider82').slick('setPosition');
+                }, 50);
+              }, 50);
+            }
+          });
+
+          $('#page2Btn').click(function () {
+            if (!$('#page2').is(':visible')) {
+              $('#page1').addClass('hidden');
+              setTimeout(function () {
+                $('#page1').hide();
+                $('#page2').show();
+                setTimeout(function () {
+                  $('#page2').removeClass('hidden');
+                  $('#pageNum2').addClass('active');
+                  $('#pageNum1').removeClass('active');
+                  $('#page2 .slider83, #page2 .slider84, #page2 .slider85, ' +
+                    '#page2 .slider86, #page2 .slider87, #page2 .slider88').slick('setPosition');
+                }, 50);
+              }, 50);
+            }
+          });
+
+          // Обработчики событий для слайдеров
+          function addSliderHandlers(dotsId, overlayId, closeId, sliderId) {
+            $('#' + dotsId).click(function () {
+              $('#' + overlayId).css('display', 'flex');
+              setTimeout(function () { $('#' + sliderId).slick('setPosition'); }, 100);
+            });
+            $('#' + closeId).click(function () { $('#' + overlayId).hide(); });
+            $('#' + overlayId).click(function (e) { if (e.target === this) $(this).hide(); });
+          }
+
+          // Первая страница
+          addSliderHandlers('dots77', 'sliderOverlay77', 'closeSlider77', 'imageSlider77');
+          addSliderHandlers('dots78', 'sliderOverlay78', 'closeSlider78', 'imageSlider78');
+          addSliderHandlers('dots79', 'sliderOverlay79', 'closeSlider79', 'imageSlider79');
+          addSliderHandlers('dots80', 'sliderOverlay80', 'closeSlider80', 'imageSlider80');
+          addSliderHandlers('dots81', 'sliderOverlay81', 'closeSlider81', 'imageSlider81');
+          addSliderHandlers('dots82', 'sliderOverlay82', 'closeSlider82', 'imageSlider82');
+
+          // Вторая страница
+          addSliderHandlers('dots83', 'sliderOverlay83', 'closeSlider83', 'imageSlider83');
+          addSliderHandlers('dots84', 'sliderOverlay84', 'closeSlider84', 'imageSlider84');
+          addSliderHandlers('dots85', 'sliderOverlay85', 'closeSlider85', 'imageSlider85');
+          addSliderHandlers('dots86', 'sliderOverlay86', 'closeSlider86', 'imageSlider86');
+          addSliderHandlers('dots87', 'sliderOverlay87', 'closeSlider87', 'imageSlider87');
+          addSliderHandlers('dots88', 'sliderOverlay88', 'closeSlider88', 'imageSlider88');
         });
       </script>
     </section>
